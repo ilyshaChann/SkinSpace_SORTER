@@ -1,0 +1,106 @@
+#logo {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2), inset 0px 6px 5px rgba(255, 255, 255, 0.23);
+}
+.input_promo {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.sub_game_block-allGames_span {
+    left: 52px;
+}
+.qiwi_wallet_number_input {
+    box-shadow: inset 4px 4px 16px rgba(0, 0, 0, 0.57);
+}
+.qiwi_wallet_number_span {
+    box-shadow: inset 4px 4px 16px rgba(0, 0, 0, 0.57);
+}
+.sub_main_basket_right {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.sub_main_basket_left_empty {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1516px) { 
+    .sub_card {
+        justify-content: center;
+    }
+    .solo_card_2Line {
+        margin-right: 2.5px;
+    }
+    .solo_card_2 {
+        margin-right: 2.5px;
+    }
+    .solo_card_2Line_last {
+        position: relative;
+        right: 510px;
+    }
+}
+@media (min-width: 1536px) { 
+    .sub_game_block-allGames_span {
+        left: 60px;
+    }
+    .sub_card {
+        justify-content: space-between;
+    }
+    .solo_card_2Line {
+        margin-right: 0px;;
+    }
+    .solo_card_2 {
+        margin-right: 0px;
+    }
+    .solo_card_2Line_last {
+        position: static;
+        margin-right: 0px;
+    }
+}
+@media (max-width: 1897px) {
+    .sub_main_basket_left {
+        padding-bottom: 50px;
+        margin-right: 0;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .sub_main_basket_right {
+        width: 950px;
+        margin-top: -15px;
+        border-radius: 20px;
+    }
+    .sub_main_basket_left_empty {
+        padding-bottom: 50px;
+        margin-right: 0;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .sub_main_basket_right_empty {
+        width: 950px;
+        margin-top: -30px;
+        border-radius: 20px;
+    }
+    .sub_main_basket_left_card_empty {
+        height: 400px;
+        margin-top: 200px;
+    }
+}
+@media (max-width: 1279px) {
+    .sub_main_basket_left_card_scrollBar {
+        width: 5px;
+        margin-right: 10px;
+    }
+    .sub_main_basket_left_card_scrollBar_band {
+        width: 5px;
+    }
+    .sub_main_basket_left_solo_card_add_element {
+        left: 15%;
+    }
+}
+@media (max-width: 639px) {
+    .sub_main_basket_left_solo_card_add_element {
+        left: 10%;
+    }
+}
+
+@media (max-width: 439px) {
+    .payment_method_card {
+        justify-content: center;
+    }
+    .payment_method_usdt {
+        margin-right: 10px;
+    }
+}

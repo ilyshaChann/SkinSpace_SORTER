@@ -1,0 +1,669 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-[#212327] font-['Montserrat'];
+  }
+  header {
+    @apply bg-[#2C3035];
+  }
+  .sub_nav {
+    @apply flex justify-between items-center pt-[38px] xl:pt-[22px] pb-[10px] xl:pb-[22px];
+  }
+  .svg_nav {
+    @apply ml-[15px] xl:ml-[100px];
+  }
+  .open_steam_button {
+    @apply h-[35px] bg-[#3c73dd] rounded-lg mr-[15px] xl:mr-[100px] p-[10px] xl:px-[35px] xl:pt-[20px] xl:pb-[40px] xl:rounded-2xl text-white font-['Montserrat'] uppercase text-[10px] xl:text-[16px] shadow-lg font-semibold;
+  }
+  .headband {
+    @apply bg-[url('img/dota_logo.png')] w-[350px] md:w-[500px] h-[120px] md:h-[245px] md:bg-no-repeat md:bg-contain 2xl:bg-[url(img/dota_logo_desktop.png)] 2xl:bg-no-repeat 2xl:w-[1490px] 2xl:h-[400px] 2xl:mx-auto mx-auto relative;
+  }
+  .headband_svg {
+    @apply absolute right-[25px] mt-[15px] w-[14px] h-[14px] 2xl:w-[22px] 2xl:h-[22px] 2xl:mt-[40px] 2xl:right-[40px];
+  }
+  .basic_text {
+    @apply text-center mt-[20px] md:mt-0;
+  }
+  .basic_text_h2 {
+    @apply font-['Montserrat'] text-[#bdbebf] px-[16px] text-[16px] xl:text-[20px];
+  }
+  .basic_text_span {
+    @apply text-white font-semibold text-[16px];
+  }
+  .sub_basic_text_h2 {
+    @apply mt-[15px] font-['Montserrat'] text-[#bdbebf] px-[16px] text-[16px] xl:text-[20px] xl:mt-[5px];
+  }
+  .sub_basic_text_span {
+    @apply text-white text-[16px];
+  }
+  .subend_basic_text {
+    @apply mt-[40px] xl:mt-[60px];
+  }
+  .subend_basic_text_h2 {
+    @apply px-[16px] font-['Montserrat'] text-[#c2c3c3] text-[12px] xl:text-[16px] xl:text-white;
+  }
+  .desktop_link_currency {
+    @apply xl:flex xl:items-center xl:justify-center xl:mx-auto;
+  }
+  .input_link {
+    @apply mt-[10px];
+  }
+  .sub_input_link {
+    @apply flex justify-center items-center relative w-[350px] xl:w-[730px] mx-auto;
+  }
+  .input_promo {
+    @apply border-[#414141] border-2 text-[#9d9d9d] text-[13px] xl:text-[16px] xl:pl-[15px] p-[5px] bg-[#303030] w-[325px] xl:w-[720px] h-[45px] xl:h-[50px] xl:mr-[5px] rounded-lg;
+  }
+  .sub_input_link_svg {
+    @apply absolute right-[30px];
+  }
+  .currency {
+    @apply mt-[10px] px-[15px] bg-[#2c3035] border-gray-600 border-2 rounded-lg w-[110px] h-[35px] xl:w-[178px] xl:h-[50px] mx-auto xl:mx-0 text-[13px] xl:ml-[5px] flex justify-center items-center font-['Montserrat'];
+  }
+  .currency_span {
+    @apply text-white xl:text-[18px];
+  }
+  .currency_svg {
+    @apply ml-[3px];
+  }
+  .price {
+    @apply mt-[25px] xl:mt-[65px];
+  }
+  .price_button {
+    @apply h-[35px] xl:h-[55px] bg-[#3c73dd] rounded-lg xl:rounded-xl p-[10px] xl:px-[35px] xl:py-[15px] text-white font-['Montserrat'] uppercase text-[10px] xl:text-[16px] shadow-lg font-semibold;
+  }
+  .game_block {
+    @apply flex flex-wrap justify-center items-center mt-[40px] xl:mt-[80px] xl:mb-[20px];
+  }
+  .sub_game_block {
+    @apply flex justify-center items-center;
+  }
+  .sub_game_block-allGames {
+    @apply relative xl:w-[260px];
+  }
+  .sub_game_block-allGames_span {
+    @apply uppercase text-white font-['Montserrat'] text-[16px] xl:text-[26px] font-bold absolute top-[50%];
+  }
+  .all_games_1 {
+    @apply w-[187px] h-[106px] xl:w-[260px] xl:h-[132px] hidden xl:block;
+  }
+  .all_games_2 {
+    @apply w-[187px] h-[106px] xl:w-[260px] block xl:hidden;
+  }
+  .CS {
+    @apply w-[187px] h-[106px] xl:w-[260px] xl:h-[136px];
+  }
+  .sub_game_block-Dota {
+    @apply flex justify-center items-center;
+  }
+  .for_bg-CS {
+    @apply bg-[url(img/BG_CS.png)] bg-center bg-contain bg-no-repeat md:bg-[url(img/Картинка_КС.png)] md:bg-cover md:bg-center md:bg-no-repeat pt-[50px];
+  }
+  .add_block {
+    @apply h-[20px] bg-[#191c21];
+  }
+  .obivan_kenobi {
+    @apply mt-[20px] xl:mt-[50px] mx-[15px] md:mx-[90px] bg-[#2c3035] font-['Montserrat'] rounded-xl xl:mx-[90px] xl:flex xl:justify-between;
+  }
+  .sub_obivan_kenobi {
+    @apply flex justify-center;
+  }
+  .sub_obivan_kenobi_img {
+    @apply p-[15px] xl:p-[30px];
+  }
+  .sub_obivan_kenobi_card {
+    @apply pt-[20px] xl:pt-[30px] pr-[15px];
+  }
+  .sub_obivan_kenobi_card_h2 {
+    @apply text-[20px] xl:text-[26px] text-white font-semibold;
+  }
+  .sub_obivan_kenobi_card_span {
+    @apply mt-[10px] xl:mt-[20px] text-[14px] xl:text-[20px] text-[#6e7174] font-semibold;
+  }
+  .sub_obivan_kenobi_card_span_price {
+    @apply text-[#4DAEFC] text-[20px] xl:text-[32px] font-semibold;
+  }
+  .sub_obivan_kenobi_price {
+    @apply pt-[15px] pb-[25px];
+  }
+  .sub_obivan_kenobi_price_span {
+    @apply text-[#6e7174] text-[14px] xl:text-[20px] xl:px-[30px] font-semibold text-center mx-auto block px-[60px];
+  }
+  .dowload {
+    @apply text-center xl:text-end mt-[15px] xl:mt-[40px];
+  }
+  .dowload_button {
+    @apply h-[35px] bg-[#3c73dd] rounded-lg xl:mr-[30px] p-[10px] xl:px-[35px] xl:pt-[20px] xl:pb-[20px] xl:rounded-xl text-white font-['Montserrat'] uppercase text-[10px] xl:text-[16px] shadow-lg font-semibold;
+  }
+  .filter {
+    @apply text-center mt-[15px] xl:mt-[35px] xl:flex xl:justify-between xl:items-center xl:mx-[90px];
+  }
+  .desktop_filter {
+    @apply xl:flex;
+  }
+  .sub_filter {
+    @apply flex;
+  }
+  .sub_filter_card {
+    @apply mt-[10px] px-[15px] xl:mr-[5px] xl:ml-[5px] bg-[#2c3035] border-gray-600 border-2 rounded-md w-[165px] md:w-[235px] lg:w-[400px] xl:w-[190px] h-[30px] xl:h-[50px] mx-auto text-[13px] flex justify-center items-center font-['Montserrat'];
+  }
+  .sub_filter_card_span {
+    @apply text-white xl:text-[18px];
+  }
+  .sub_filter_card_svg {
+    @apply ml-[10px];
+  }
+  .filter_basket {
+    @apply flex justify-between px-[15px] md:px-[90px] mt-[20px];
+  }
+  .deskop_filter_basket {
+    @apply flex items-center justify-between;
+  }
+  .sub_filter_basket {
+    @apply flex justify-start items-center;
+  }
+  .sub_filter_basket_span_1 {
+    @apply uppercase text-[14px] xl:text-[16px] text-[#909193] font-['Montserrat'] font-semibold mr-[10px];
+  }
+  .sub_filter_basket_span_2 {
+    @apply uppercase text-[14px] xl:text-[16px] text-[#909193] font-['Montserrat'] font-semibold ml-[10px] mr-0;
+  }
+  .svg_filter_basket_1 {
+    @apply ml-[10px];
+  }
+  .svg_filter_basket_2 {
+    @apply mr-[18px];
+  }
+  .sub_filter_basket_svg_1 {
+    @apply mb-[5px];
+  }
+  .sub_filter_basket_svg_2 {
+    @apply mt-[5px];
+  }
+  .subend_filter_basket {
+    @apply font-['Montserrat'] mx-0 mt-[20px] mb-[20px];
+  }
+  .subend_filter_basket_span_1 {
+    @apply text-white text-[14px] xl:text-[20px];
+  }
+  .subend_filter_basket_span_2 {
+    @apply text-[#4DAEFC] font-semibold;
+  }
+  .card {
+    @apply font-['Montserrat'] px-[15px] xl:px-[90px] relative;
+  }
+  .sub_card {
+    @apply flex flex-wrap justify-between;
+  }
+  .solo_card {
+    @apply bg-[url(img/Rectangle_178.png)] w-[167px] 2xl:w-[270px] 2xl:h-[290px] bg-no-repeat bg-cover rounded-lg mt-[20px];
+  }
+  .solo_card_img {
+    @apply mx-auto xl:w-[160px] xl:h-[175px];
+  }
+  .solo_card_content {
+    @apply w-[167px] xl:w-[270px] h-[70px] xl:h-[115px] bg-[#404245] rounded-b-lg;
+  }
+  .solo_card_content_2 {
+    @apply w-[150px] sm:w-[167px] xl:w-[270px] h-[70px] xl:h-[115px] bg-[#404245] rounded-b-lg;
+  }
+  .solo_card_content_span {
+    @apply text-[12px] sm:text-[13px] xl:text-[20px] text-white block text-center pt-[10px] font-medium tracking-wide;
+  }
+  .sub_solo_card_content {
+    @apply flex justify-between pt-[10px] xl:pt-[18px] px-[10px] 2xl:px-[16px];
+  }
+  .sub_solo_card_content_span_1 {
+    @apply text-[#4daefc] text-[14px] xl:text-[20px] font-semibold;
+  }
+  .sub_solo_card_content_span_2 {
+    @apply text-white text-[14px] xl:text-[20px] font-semibold;
+  }
+  .solo_card_2 {
+    @apply bg-[url(img/Rectangle_178.png)] w-[167px] xl:w-[270px] 2xl:h-[290px] bg-no-repeat bg-cover rounded-lg mt-[20px] blur-sm opacity-25 xl:opacity-50;
+  }
+  .solo_card_2_desktop {
+    @apply relative;
+  }
+  .solo_card_2_added {
+    @apply w-[100px] 2xl:w-[135px] text-center absolute right-[30px] bottom-[20%] xl:right-[85px] xl:bottom-[35%] 2xl:right-[65px] 2xl:bottom-[25%];
+  }
+  .solo_card_2_added_svg {
+    @apply mx-auto mb-[8px] w-[38px] 2xl:w-[60px] h-[40px] 2xl:h-[62px];
+  }
+  .solo_card_2_added_span_desktop {
+    @apply uppercase text-[14px] 2xl:text-[20px] 2xl:w-[135px] font-bold underline underline-offset-4 text-[#3677AB];
+  }
+  .solo_card_2_added_span {
+    @apply uppercase text-[#4daefc] text-[14px] 2xl:text-[20px] 2xl:w-[135px] font-bold underline underline-offset-4;
+  }
+  .solo_card_2_added_span_desktop {
+    @apply 2xl:text-[#3677AB];
+  }
+  .solo_card_2Line {
+    @apply bg-[url(img/Rectangle_178.png)] w-[167px] xl:w-[270px] xl:bg-cover bg-no-repeat rounded-lg mt-[20px];
+  }
+  .solo_card_2Line_last {
+    @apply bg-[url(img/Rectangle_178.png)] w-[167px] xl:w-[270px] xl:bg-cover bg-no-repeat rounded-lg mt-[20px];
+  }
+  .solo_card_2Line_added {
+    @apply bg-[url(img/Rectangle_178.png)] w-[167px] xl:w-[270px] xl:bg-cover bg-no-repeat rounded-lg mt-[10px] xl:mt-[20px] blur-sm opacity-25 xl:blur-0 xl:opacity-100;
+  }
+  .solo_card_2Line_add {
+    @apply w-[100px] 2xl:w-[130px] text-center absolute right-[30px] xl:right-[80px] xl:bottom-[42%] 2xl:right-[65px] bottom-[30%] 2xl:bottom-[35%];
+  }
+  .solo_card_2Line_add_svg {
+    @apply mx-auto mb-[8px] w-[42px] h-[42px] 2xl:w-[65px] 2xl:h-[65px];
+  }
+  .solo_card_2Line_add_span {
+    @apply uppercase text-[#4ec75a] text-[14px] 2xl:text-[20px] font-bold;
+  }
+  .card_repeat {
+    @apply font-['Montserrat'] px-[15px];
+  }
+  .sub_card_repeat {
+    @apply flex justify-between;
+  }
+  .card_repeat_end {
+    @apply font-['Montserrat'] px-[15px] mb-[20px];
+  }
+  .switch {
+    @apply bg-[#191c22] 2xl:bg-[#212327] font-['Montserrat'] mt-[20px] px-[20px] 2xl:px-[600px] 2xl:my-[55px];
+  }
+  .sub_switch {
+    @apply flex items-center justify-evenly pt-[15px];
+  }
+  .sub_switch_span_1 {
+    @apply text-[#4DAEFC] text-[14px] 2xl:text-[26px];
+  }
+  .sub_switch_span {
+    @apply text-[#8c8d90] text-[14px] 2xl:text-[26px];
+  }
+  .sub_switch_svg_1 {
+    @apply w-[9px] 2xl:w-[12px] h-[14px] 2xl:h-[20px];
+  }
+  .sub_switch_svg_2 {
+    @apply w-[9px] 2xl:w-[12px] h-[14px] 2xl:h-[20px];
+  }
+  footer {
+    @apply bg-[#191c22] font-['Montserrat'] px-[15px] 2xl:px-[90px];
+  }
+  .sub_footer {
+    @apply flex pt-[70px] justify-between;
+  }
+  .sub_footer_svg {
+    @apply w-[85px] xl:w-[135px] h-[26px] xl:h-[40px];
+  }
+  .contact {
+    @apply pb-[50px] xl:flex xl:items-center;
+  }
+  .contact_span {
+    @apply text-white text-[14px] xl:text-[20px] font-semibold xl:mr-[12px];
+  }
+  .sub_contact {
+    @apply flex justify-end mt-[10px] xl:ml-[12px] xl:mt-0;
+  }
+  .sub_contacnt_svg_1 {
+    @apply mr-[15px] w-[26px] xl:w-[42px] h-[26px] xl:h-[42px];
+  }
+  .sub_contacnt_svg_2 {
+    @apply w-[26px] xl:w-[42px] h-[26px] xl:h-[42px];
+  }
+  .main_basket_1 {
+    @apply m-[10px] md:m-[80px] rounded-2xl hidden;
+  }
+  .sub_main_basket {
+    @apply flex justify-center flex-wrap;
+  }
+  .sub_main_basket_left {
+    @apply w-[950px] bg-[#2C3035] sm:-mr-3 rounded-l-2xl;
+  }
+  .sub_main_basket_left_card_scrollBar {
+    @apply self-stretch w-[10px] bg-[#424447] rounded-md mr-[35px] mt-[20px];
+  }
+  .sub_main_basket_left_card_scrollBar_band {
+    @apply w-[10px] h-[150px] xl:h-[250px] bg-[#848587] rounded-md;
+  }
+  .header_sub_main_basket_left {
+    @apply flex items-center justify-between mt-[30px] sm:mt-[65px] mx-[30px] lg:mx-[60px] relative sm:static;
+  }
+  .header_sub_main_basket_left_svg_span {
+    @apply flex items-center;
+  }
+  .header_sub_main_basket_left_svgBasket {
+    @apply w-[18px] h-[18px] sm:w-[31px] sm:h-[32px] mr-[7px];
+  }
+  .header_sub_main_basket_left_span {
+    @apply text-[16px] sm:text-[26px] text-white ml-[7px];
+  }
+  .header_sub_main_basket_left_svgMobile {
+    @apply block sm:hidden w-[12px] h-[12px];
+  }
+  .header_sub_main_basket_left_a {
+    @apply text-[12px] sm:text-[20px] text-[#4DAEFC] sm:text-[#3d6f98] uppercase w-[100px] sm:w-auto underline underline-offset-4 absolute sm:static top-[45px] -right-4;
+  }
+  .total_goods {
+    @apply mt-[20px] lg:mt-[40px] mx-[20px] lg:mx-[50px];
+  }
+  .total_goods_span_1 {
+    @apply text-white text-[15px] sm:text-[26px] mr-[2px];
+  }
+  .total_goods_span_2 {
+    @apply text-[#4DAEFC] text-[16px] sm:text-[28px] font-semibold ml-[2px];
+  }
+  .sub_main_basket_left_card {
+    @apply ml-[10px] lg:ml-[50px] flex;
+  }
+  .sub_main_basket_left_sub_card {
+    @apply flex items-center flex-wrap;
+  }
+  .sub_main_basket_left_solo_card_addElement {
+    @apply relative;
+  }
+  .sub_main_basket_left_solo_card {
+    @apply bg-[url(img/Rectangle_178.png)] w-[150px] sm:w-[167px] xl:w-[270px] xl:bg-cover bg-no-repeat rounded-lg mt-[20px] mr-[10px] blur-sm opacity-50;
+  }
+  .sub_main_basket_left_solo_card_span_1 {
+    @apply text-[#53D778] text-[14px] xl:text-[20px] font-semibold;
+  }
+  .sub_main_basket_left_solo_card_span_2 {
+    @apply text-white text-[14px] xl:text-[20px] font-semibold;
+  }
+  .sub_main_basket_left_solo_card_add_element {
+    @apply absolute left-[27%] bottom-[48%];
+  }
+  .sub_main_basket_left_solo_card_add_element_block {
+    @apply flex items-center;
+  }
+  .sub_main_basket_left_solo_card_add_element_block_svg_1 {
+    @apply w-[21px] h-[3px];
+  }
+  .sub_main_basket_left_solo_card_add_element_block_div {
+    @apply bg-[#474a4f] border-[2px] border-[#7e8289] rounded-lg w-[60px] h-[50px] flex items-center justify-center mx-[10px];
+  }
+  .sub_main_basket_left_solo_card_add_element_block_div_span {
+    @apply text-white text-[22px];
+  }
+  .sub_main_basket_left_solo_card_add_element_block_svg_2 {
+    @apply w-[21px] h-[21px];
+  }
+  .sub_main_basket_left_solo_card_2 {
+    @apply bg-[url(img/Rectangle_178.png)] w-[150px] sm:w-[167px] xl:w-[270px] xl:bg-cover bg-no-repeat rounded-lg mt-[20px] mr-[10px];
+  }
+  .sub_main_basket_right {
+    @apply bg-[#33383E] w-full md:w-[800px] h-full rounded-2xl;
+  }
+  .header_sub_main_basket_right {
+    @apply flex items-center justify-between px-[20px] md:px-[50px] mt-[40px];
+  }
+  .header_sub_main_basket_right_doubleSpan {
+    @apply flex items-end;
+  }
+  .header_sub_main_basket_right_span1 {
+    @apply text-[16px] sm:text-[26px] text-white;
+  }
+  .header_sub_main_basket_right_span2 {
+    @apply text-[#53D778] font-extrabold -mb-1 md:-mb-2;
+  }
+  .header_sub_main_basket_right_span3 {
+    @apply text-[20px] sm:text-[32px] pl-[20px] pr-[10px];
+  }
+  .header_sub_main_basket_right_span4 {
+    @apply text-[26px] sm:text-[50px];
+  }
+  .header_sub_main_basket_right_svgMobile {
+    @apply hidden sm:block w-[22px] h-[22px] mt-2;
+  }
+  .sub_main_basket_right_warning {
+    @apply bg-[#3d4248] py-[10px] px-[15px] inline-block rounded-xl mx-[20px] md:mx-[50px] mt-[20px];
+  }
+  .sub_main_basket_right_warning_span {
+    @apply text-[14px] sm:text-[16px] text-[#9ea0a3];
+  }
+  .payment_method {
+    @apply mx-[20px] md:ml-[50px] mt-[30px] md:mt-[50px];
+  }
+  .payment_method_span {
+    @apply text-[16px] md:text-[20px] text-white;
+  }
+  .payment_method_card {
+    @apply flex items-center flex-wrap;
+  }
+  .payment_method_cards {
+    @apply flex items-center justify-center w-[185px] h-[80px] bg-[#474c51] rounded-xl mt-[15px] mr-[10px];
+  }
+  .payment_method_cards_1 {
+    @apply flex items-center justify-center w-[185px] h-[80px] border-[3px] border-[#3C73DD] bg-[#474c51] rounded-xl mt-[15px] mr-[10px];
+  }
+  .payment_method_cards_svg {
+    @apply block w-[52px] h-[52px] mr-[7px];
+  }
+  .payment_method_cards_options {
+    @apply max-w-[70px] ml-[7px];
+  }
+  .payment_method_cards_options_1 {
+    @apply text-[14px] text-white font-medium;
+  }
+  .payment_method_cards_options_2 {
+    @apply text-[12px] text-[#979a9d];
+  }
+  .payment_method_qiwi {
+    @apply flex items-center justify-center w-[185px] h-[80px] bg-[#474c51] rounded-xl mt-[15px] mr-[10px];
+  }
+  .payment_method_qiwi_1 {
+    @apply flex items-center justify-center w-[185px] h-[80px] border-[3px] border-[#3C73DD] bg-[#474c51] rounded-xl mt-[15px] mr-[10px];
+  }
+  .payment_method_qiwi_svg {
+    @apply w-[32px] h-[32px] mr-[7px];
+  }
+  .payment_method_qiwi_options {
+    @apply max-w-[70px] ml-[7px];
+  }
+  .payment_method_qiwi_options_1 {
+    @apply text-[14px] text-white font-medium;
+  }
+  .payment_method_qiwi_options_2 {
+    @apply text-[12px] text-[#979a9d];
+  }
+  .payment_method_usdt {
+    @apply flex items-center justify-center w-[185px] h-[80px] bg-[#474c51] rounded-xl mt-[15px];
+  }
+  .payment_method_usdt_1 {
+    @apply flex items-center justify-center w-[185px] h-[80px] border-[3px] border-[#3C73DD] bg-[#474c51] rounded-xl mt-[15px] mr-[10px];
+  }
+  .payment_method_usdt_svg {
+    @apply w-[32px] h-[32px] mr-[7px];
+  }
+  .payment_method_usdt_options {
+    @apply max-w-[70px] ml-[7px];
+  }
+  .payment_method_usdt_options_1 {
+    @apply text-[14px] text-white font-medium;
+  }
+  .payment_method_usdt_options_2 {
+    @apply text-[12px] text-[#979a9d];
+  }
+  .qiwi_wallet_number {
+    @apply mx-[20px] md:mx-[50px] mt-[30px];
+  }
+  .qiwi_wallet_number_span_1 {
+    @apply text-[16px] md:text-[20px] text-white;
+  }
+  .card_wallet_number_input {
+    @apply w-[300px] md:w-[370px] flex items-center relative;
+  }
+  .qiwi_wallet_number_input {
+    @apply mt-[15px] block border-[#414141] border-2 text-[#e6e6e6] text-[13px] xl:text-[16px] xl:pl-[15px] px-[10px] py-[10px] bg-[#303030] w-[300px] md:w-[370px] h-[45px] xl:h-[50px] rounded-lg;
+  }
+  .card_wallet_number_input_svg {
+    @apply w-[12px] h-[8px] absolute right-[20px] mt-[15px];
+  }
+  .qiwi_wallet_number_span_2 {
+    @apply block text-[13px] md:text-[14px] text-[#85888b] mt-[5px];
+  }
+  .information_on_email {
+    @apply mx-[20px] md:mx-[50px] mt-[30px];
+  }
+  .information_on_email_span_1 {
+    @apply text-[16px] text-white;
+  }
+  .information_on_email_span_2 {
+    @apply block text-[13px] md:text-[14px] text-[#85888b] mt-[5px];
+  }
+  .footer_sub_main_basket_right {
+    @apply w-full bg-[#25292e] h-full mt-[50px] rounded-b-2xl;
+  }
+  .sub_footer_sub_main_basket_right_1 {
+    @apply mx-[20px] md:mx-[50px] pt-[30px] md:pt-[50px];
+  }
+  .sub_footer_sub_main_basket_right_withdrawal_method {
+    @apply flex justify-between items-center;
+  }
+  .sub_footer_sub_main_basket_right_withdrawal_method_1 {
+    @apply text-[#929496] text-[16px] md:text-[20px] font-semibold w-[180px] md:w-auto;
+  }
+  .sub_footer_sub_main_basket_right_withdrawal_method_2 {
+    @apply text-white text-[16px] md:text-[20px] font-semibold w-[120px] md:w-auto text-end;
+  }
+  .sub_footer_sub_main_basket_right_2 {
+    @apply mx-[20px] md:mx-[50px] pt-[30px];
+  }
+  .sub_footer_sub_main_basket_right_3 {
+    @apply mx-[20px] md:mx-[50px] pt-[50px] md:pt-[60px];
+  }
+  .sub_footer_sub_main_basket_right_withdrawal_method_13 {
+    @apply text-[24px] md:text-[32px] text-white font-semibold;
+  }
+  .sub_footer_sub_main_basket_right_withdrawal_method_23 {
+    @apply text-[#53D778] text-[24px] md:text-[32px] font-semibold;
+  }
+  .get_money_block {
+    @apply text-center mt-[60px] md:mt-[100px] pb-[60px];
+  }
+  .get_money {
+    @apply h-[55px] bg-[#335086] rounded-xl px-[40px] py-[18px] text-[#8d9095] uppercase text-[16px] shadow-lg font-semibold;
+  }
+  .main_basket_2 {
+    @apply m-[10px] md:m-[80px] rounded-2xl hidden;
+  }
+  .get_money_main_basket_2 {
+    @apply h-[55px] bg-[#3C73DD] rounded-xl px-[40px] py-[18px] text-white uppercase text-[16px] shadow-lg font-semibold;
+  }
+  .main_basket_3 {
+    @apply m-[10px] md:m-[80px] rounded-2xl hidden;
+  }
+  .get_money_block_main_basket_3 {
+    @apply text-center mt-[50px] pb-[60px];
+  }
+  .get_money_main_basket_3 {
+    @apply h-[55px] bg-[#3C73DD] rounded-xl px-[40px] py-[18px] text-white uppercase text-[16px] shadow-lg font-semibold;
+  }
+  .main_basket_4 {
+    @apply m-[10px] md:m-[80px] rounded-2xl hidden;
+  }
+  .sub_main_basket_empty {
+    @apply flex justify-center flex-wrap relative;
+  }
+  .sub_main_basket_left_empty {
+    @apply w-[950px] bg-[#2C3035] sm:-mr-3 rounded-l-2xl z-10;
+  }
+  .sub_main_basket_right_empty {
+    @apply bg-[#33383E] w-full md:w-[800px] h-full rounded-2xl opacity-50;
+  }
+  .sub_main_basket_left_card_empty {
+    @apply h-[640px] mt-[320px];
+  }
+  .sub_main_basket_left_sub_card_empty {
+    @apply text-center;
+  }
+  .sub_main_basket_left_sub_card_svg {
+    @apply w-[36px] h-[36px] md:w-[54px] md:h-[54px] mx-auto;
+  }
+  .sub_main_basket_left_sub_card_h2 {
+    @apply text-[16px] md:text-[32px] text-white font-semibold mt-[10px] md:mt-[20px];
+  }
+  .sub_main_basket_left_sub_card_span {
+    @apply inline-block text-[13px] md:text-[20px] text-[#95979a] font-semibold mt-[10px] md:mt-[20px] w-[160px] md:w-[340px];
+  }
+  .error_loading {
+    @apply relative w-[320px] lg:w-[880px] h-[166px] lg:h-[335px] bg-[#212327] rounded-xl my-[10px] mx-auto font-['Montserrat'] hidden;
+  }
+  .error_svg {
+    @apply mx-auto relative top-[25px] lg:top-[50px] w-[30px] lg:w-[60px] h-[30px] lg:h-[60px];
+  }
+  .error_loading_prgrf {
+    @apply text-center text-white text-[16px] lg:text-[32px] font-semibold pt-[35px] lg:pt-[70px];
+  }
+  .error_loading_text {
+    @apply block text-[13px] lg:text-[26px] lg:w-[600px] lg:mx-auto text-center text-[#6e7073] px-[10px] mt-[10px] lg:mt-[25px];
+  }
+  .cross_3 {
+    @apply absolute right-0 mr-[25px] lg:mr-[35px] mt-[15px] lg:mt-[40px] w-[14px] h-[14px] lg:w-[22px] lg:h-[22px];
+  }
+  .success_loading {
+    @apply relative w-[320px] lg:w-[880px] h-[166px] lg:h-[335px] bg-[#212327] rounded-xl my-[10px] mx-auto font-['Montserrat'] hidden;
+  }
+  .success_svg {
+    @apply mx-auto relative top-[25px] lg:top-[50px] w-[30px] lg:w-[60px] h-[30px] lg:h-[60px];
+  }
+  .success_loading_prgrf {
+    @apply text-center text-white text-[16px] lg:text-[32px] font-semibold pt-[35px] lg:pt-[70px];
+  }
+  .success_loading_text {
+    @apply block text-[13px] lg:text-[26px] lg:w-[600px] lg:mx-auto text-center text-[#6e7073] px-[10px] mt-[10px] lg:mt-[25px];
+  }
+  .new_account {
+    @apply bg-[#212327] w-[320px] lg:w-[880px] h-[180px] lg:h-[410px] rounded-xl mx-auto my-[10px] font-['Montserrat'] hidden;
+  }
+  .header_new_account {
+    @apply bg-[#2c3035] relative h-[45px] lg:h-[100px] rounded-t-xl;
+  }
+  .prgrf_new_account {
+    @apply text-[16px] lg:text-[32px] text-white text-center pt-[10px] lg:pt-[25px] font-semibold;
+  }
+  .cross_3_new_account {
+    @apply absolute right-0 mr-[15px] lg:mr-[35px] mt-[15px] lg:mt-[40px] w-[14px] h-[14px] lg:w-[22px] lg:h-[22px];
+  }
+  .text_new_account {
+    @apply text-center block text-[#bcbdbe] text-[14px] mx-auto lg:text-[26px] mt-[20px] lg:pt-[50px] mb-[15px];
+  }
+  .new_account_content_sub {
+    @apply flex items-center justify-center mx-[20px] lg:mx-[100px] mt-[30px] lg:mt-[50px];
+  }
+  .new_account_content_sub_block_1 {
+    @apply h-[5px] lg:h-[10px] w-[50px] lg:w-[120px] bg-[#4DAEFC] mr-[5px] lg:mr-[10px];
+  }
+  .new_account_content_sub_block_2 {
+    @apply h-[5px] lg:h-[10px] w-[50px] lg:w-[120px] bg-[#335b7c] mr-[5px] lg:mr-[10px];
+  }
+  .new_account_content_sub_block_3 {
+    @apply h-[5px] lg:h-[10px] w-[50px] lg:w-[120px] bg-[#283949] mr-[5px] lg:mr-[10px];
+  }
+  .choice_card {
+    @apply my-[10px] hidden;
+  }
+  .sub_choice_card_1_block {
+    @apply flex items-center m-auto relative w-[300px] md:w-[370px];
+  }
+  .sub_choice_card_1_block_svg_input {
+    @apply border-[#414141] border-2 text-[#9d9d9d] text-[13px] xl:text-[16px] xl:pl-[15px] p-[5px] bg-[#303030] w-[325px] xl:w-[720px] h-[45px] xl:h-[50px] xl:mr-[5px] rounded-lg;
+  }
+  .sub_choice_card_1_block_svg {
+    @apply absolute right-[25px] mt-[15px] w-[12px] h-[8px];
+  }
+  .sub_choice_card_2 {
+    @apply mx-auto w-[300px] md:w-[480px] text-[10px] md:text-[13px] xl:text-[16px] xl:pl-[15px] p-[5px] lg:p-[10px] h-[80px] xl:h-[100px] rounded-lg;
+  }
+  .qiwi_wallet_number_span {
+    @apply block border-[#414141] border-2 text-[#e6e6e6] text-[13px] xl:text-[16px] xl:pl-[15px] px-[10px] py-[10px] bg-[#303030] w-[300px] md:w-[370px] h-[90px] md:h-[105px] rounded-lg;
+  }
+  .sub_choice_card_2_block {
+    @apply flex items-center justify-between pr-[15px] lg:pr-[30px] pt-[5px];
+  }
+  .sub_choice_card_2_block_span_2 {
+    @apply text-[#838383];
+  }
+}
