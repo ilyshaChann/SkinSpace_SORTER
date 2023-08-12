@@ -1,0 +1,612 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-[#212327] font-['Montserrat'];
+  }
+  header {
+    @apply bg-[#2C3035];
+  }
+  .sub_nav {
+    @apply flex justify-between items-center px-[16px] xl:px-[100px] pt-[38px] xl:pt-[22px] pb-[10px] xl:pb-[22px];
+  }
+  .svg_nav {
+    @apply w-[100px] h-[35px];
+  }
+  .nav_obivan {
+    @apply flex items-center;
+  }
+  .nav_obivan_img {
+    @apply w-[40px] sm:w-[60px] h-[40px] sm:h-[60px] ml-[5px] mr-[5px] sm:ml-[15px] sm:mr-[15px];
+  }
+  .nav_obivan_span {
+    @apply text-white text-[16px] sm:text-[26px] font-medium sm:font-semibold;
+  }
+  .nav_obivan_svg {
+    @apply w-[10px] h-[6px] sm:w-[20px] sm:h-[13px];
+  }
+  .open_steam_button {
+    @apply h-[35px] bg-[#3c73dd] rounded-lg mr-[15px] xl:mr-[100px] p-[10px] xl:px-[35px] xl:pt-[20px] xl:pb-[40px] xl:rounded-2xl text-white font-['Montserrat'] uppercase text-[10px] xl:text-[16px] shadow-lg font-semibold;
+  }
+  .headband {
+    @apply bg-[url('img/dota_logo.png')] w-[350px] md:w-[500px] h-[120px] md:h-[245px] md:bg-no-repeat md:bg-contain 2xl:bg-[url(img/dota_logo_desktop.png)] 2xl:bg-no-repeat 2xl:w-[1490px] 2xl:h-[400px] 2xl:mx-auto mx-auto relative;
+  }
+  .headband_svg {
+    @apply absolute right-[25px] mt-[15px] w-[14px] h-[14px] 2xl:w-[22px] 2xl:h-[22px] 2xl:mt-[40px] 2xl:right-[40px];
+  }
+  .basic_text {
+    @apply text-center mt-[20px] md:mt-0;
+  }
+  .basic_text_h2 {
+    @apply font-['Montserrat'] text-[#bdbebf] px-[16px] text-[16px] xl:text-[20px];
+  }
+  .basic_text_span {
+    @apply text-white font-semibold text-[16px];
+  }
+  .sub_basic_text_h2 {
+    @apply mt-[15px] font-['Montserrat'] text-[#bdbebf] px-[16px] text-[16px] xl:text-[20px] xl:mt-[5px];
+  }
+  .sub_basic_text_span {
+    @apply text-white text-[16px];
+  }
+  .subend_basic_text {
+    @apply mt-[40px] xl:mt-[60px];
+  }
+  .subend_basic_text_h2 {
+    @apply px-[16px] font-['Montserrat'] text-[#c2c3c3] text-[12px] xl:text-[16px] xl:text-white;
+  }
+  .desktop_link_currency {
+    @apply xl:flex xl:items-center xl:justify-center xl:mx-auto;
+  }
+  .input_link {
+    @apply mt-[10px];
+  }
+  .sub_input_link {
+    @apply flex justify-center items-center relative w-[350px] xl:w-[730px] mx-auto;
+  }
+  .input_promo {
+    @apply border-[#414141] w-[300px] md:w-[480px] border-2 text-[#4DAEFC] text-[10px] md:text-[13px] xl:text-[16px] xl:pl-[15px] p-[5px] bg-[#303030] h-[45px] xl:h-[50px] rounded-lg;
+  }
+  .sub_input_link_svg {
+    @apply absolute right-[30px];
+  }
+  .currency {
+    @apply mt-[10px] px-[15px] bg-[#2c3035] border-gray-600 border-2 rounded-lg w-[110px] h-[35px] xl:w-[178px] xl:h-[50px] mx-auto xl:mx-0 text-[13px] xl:ml-[5px] flex justify-center items-center font-['Montserrat'];
+  }
+  .currency_span {
+    @apply text-white xl:text-[18px];
+  }
+  .currency_svg {
+    @apply ml-[3px];
+  }
+  .price {
+    @apply mt-[25px] xl:mt-[65px] mb-[30px] lg:mb-[60px] text-center;
+  }
+  .price_button {
+    @apply h-[35px] xl:h-[55px] bg-[#3c73dd] rounded-lg xl:rounded-xl p-[10px] xl:px-[35px] xl:py-[15px] text-white font-['Montserrat'] uppercase text-[10px] xl:text-[16px] shadow-lg font-semibold;
+  }
+  .game_block {
+    @apply flex flex-wrap justify-center items-center mt-[40px] xl:mb-[20px];
+  }
+  .sub_game_block {
+    @apply flex justify-center items-center;
+  }
+  .sub_game_block-allGames {
+    @apply relative xl:w-[260px];
+  }
+  .sub_game_block-allGames_span {
+    @apply uppercase text-white font-['Montserrat'] text-[16px] xl:text-[26px] font-bold absolute top-[50%];
+  }
+  .all_games_1 {
+    @apply w-[187px] h-[106px] xl:w-[260px] xl:h-[132px] hidden xl:block;
+  }
+  .all_games_2 {
+    @apply w-[187px] h-[106px] xl:w-[260px] block xl:hidden;
+  }
+  .CS {
+    @apply w-[187px] h-[106px] xl:w-[260px] xl:h-[136px];
+  }
+  .sub_game_block-Dota {
+    @apply flex justify-center items-center;
+  }
+  .for_bg-CS {
+    @apply lg:bg-[url(img/Картинка_КС.png)] lg:bg-cover lg:bg-center lg:bg-no-repeat pt-[50px];
+  }
+  .tracked_accounts_bg {
+    @apply bg-[url(img/BG_CS.png)] bg-no-repeat bg-cover sm:bg-none pb-[50px] sm:pb-0 rounded-3xl;
+  }
+  .add_block {
+    @apply h-[20px] bg-[#191c21];
+  }
+  .sub_general_information {
+    @apply text-center;
+  }
+  .sub_general_information_h2 {
+    @apply md:text-[32px] text-[20px] text-white font-semibold;
+  }
+  .general_information_requisites {
+    @apply mt-[20px] sm:mt-[30px] sm:pb-[30px] pb-[50px];
+  }
+  .sub_general_information_requisites_frst {
+    @apply flex items-center justify-center sm:justify-start flex-wrap lg:flex-nowrap mx-[15px];
+  }
+  .sub_general_information_requisites {
+    @apply flex items-center justify-center sm:justify-start flex-wrap lg:flex-nowrap mx-[15px] pt-[20px];
+  }
+  .general_information_props {
+    @apply text-center mt-[30px] sm:mt-[50px];
+  }
+  .general_information_props_h2 {
+    @apply md:text-[26px] text-[20px] text-white font-semibold;
+  }
+  .add_bank_card {
+    @apply flex items-center mt-[10px] sm:mt-0 w-auto sm:w-1/3;
+  }
+  .add_bank_card_a {
+    @apply text-[12px] sm:text-[16px] underline underline-offset-4 text-[#4DAEFC] sm:ml-[25px];
+  }
+  .add_bank_card_svg {
+    @apply w-[8px] h-[12px] ml-[5px] sm:ml-[8px];
+  }
+  .sub_general_information_block_span_BankCard {
+    @apply text-[16px] sm:text-[20px] text-[#6e7174] mb-[5px] sm:mb-0 sm:mr-[15px];
+  }
+  .sub_general_information_block_span_qiwi {
+    @apply text-[16px] sm:text-[20px] text-[#6e7174] sm:mr-[53px];
+  }
+  .sub_general_information_block_span_trc20 {
+    @apply text-[16px] sm:text-[20px] text-[#6e7174] sm:mr-[26px];
+  }
+  .general_information_block {
+    @apply bg-[#2C3035] mt-[30px] pt-[50px] rounded-xl mx-[15px] sm:mx-[50px] xl:mx-[100px] 2xl:mx-[200px];
+  }
+  .sub_general_information_block_span {
+    @apply text-[16px] sm:text-[20px] text-white sm:ml-[25px];
+  }
+  .sub_general_information_block_frst {
+    @apply flex items-center flex-wrap justify-center sm:justify-start lg:flex-nowrap mx-[15px];
+  }
+  .sub_general_information_block_span_frst_block {
+    @apply text-center sm:text-end w-1/3;
+  }
+  .sub_general_information_block_last {
+    @apply mt-[10px] text-center sm:text-start sm:mt-0 w-1/2 sm:w-1/3;
+  }
+  .sub_general_information_block {
+    @apply flex items-center flex-wrap justify-center sm:justify-start lg:flex-nowrap mx-[15px] pt-[20px];
+  }
+  .input_general_information_block {
+    @apply flex items-center m-auto relative w-[300px] md:w-[480px];
+  }
+  .input_general_information_block_svg {
+    @apply absolute right-[25px] w-[14px] h-[14px];
+  }
+  .sub_general_information_block_span_frst {
+    @apply text-[16px] sm:text-[20px] text-[#6e7174] sm:mr-[15px];
+  }
+  .sub_general_information_block_span_scnd {
+    @apply text-[16px] sm:text-[20px] text-[#6e7174] sm:mr-[18px];
+  }
+  .sub_general_information_block_span_thrd {
+    @apply text-[16px] sm:text-[20px] text-[#6e7174] sm:mr-[47px];
+  }
+  .personal_area_obivan_kenobi {
+    @apply flex items-center justify-center flex-wrap;
+  }
+  .obivan_kenobi {
+    @apply mt-[20px] xl:mt-[50px] mx-[15px] md:mx-[90px] bg-[#2c3035] font-['Montserrat'] rounded-t-xl xl:rounded-l-xl xl:rounded-tr-none xl:ml-[90px] xl:mr-0 max-w-[730px] w-full sm:w-[660px];
+  }
+  .sub_obivan_kenobi {
+    @apply flex justify-start items-center;
+  }
+  .sub_obivan_kenobi_img {
+    @apply p-[15px] xl:p-[30px];
+  }
+  .sub_obivan_kenobi_card {
+    @apply pr-[20px];
+  }
+  .sub_obivan_kenobi_card_h2 {
+    @apply text-[20px] lg:text-[26px] text-white font-semibold;
+  }
+  .sub_obivan_kenobi_dateRegister {
+    @apply flex items-center flex-wrap xl:mt-[5px];
+  }
+  .sub_obivan_kenobi_card_span {
+    @apply text-[14px] sm:text-[20px] text-[#6e7174] font-semibold mr-[10px] sm:mr-[18px];
+  }
+  .sub_obivan_kenobi_card_spanDate {
+    @apply text-[14px] sm:text-[20px] text-[#4DAEFC] font-semibold;
+  }
+  .obivan_kenobi_balance {
+    @apply pl-[25px] sm:pl-[40px];
+  }
+  .obivan_kenobi_sub_balance_span_1 {
+    @apply text-[20px] sm:text-[26px] text-white font-semibold mr-[10px] sm:mr-[15px];
+  }
+  .obivan_kenobi_sub_balance_span_2 {
+    @apply text-[20px] sm:text-[26px] text-[#4DAEFC] font-semibold;
+  }
+  .obivan_kenobi_sub_topUp {
+    @apply pt-[5px] sm:pt-[15px] flex items-center pb-[40px];
+  }
+  .obivan_kenobi_sub_topUp_span {
+    @apply text-[12px] sm:text-[16px] text-[#6e7174] font-semibold mr-[10px] sm:mr-[18px];
+  }
+  .obivan_kenobi_sub_topUp_link {
+    @apply flex items-center px-[20px] sm:px-[5px];
+  }
+  .obivan_kenobi_sub_topUp_link_a {
+    @apply uppercase text-[12px] sm:text-[16px] text-[#4DAEFC] underline underline-offset-2 font-semibold pr-[10px];
+  }
+  .obivan_kenobi_sub_topUp_link_svg {
+    @apply w-[8px] h-[12px];
+  }
+  .follow_obivan_kenobi {
+    @apply xl:w-[650px] w-full sm:w-auto -mt-[10px] mx-[15px] h-[298px] bg-[#33383E] xl:mt-[50px] rounded-xl xl:-ml-[10px] xl:mr-[100px];
+  }
+  .sub_follow_obivan_kenobi_h2 {
+    @apply text-[20px] sm:text-[26px] text-white sm:pt-[30px] pt-[20px] pl-[25px] xl:pl-[50px];
+  }
+  .sub_follow_obivan_kenobi_priceAll {
+    @apply sm:mx-[50px] ml-[25px] mt-[20px] sm:mb-[50px];
+  }
+  .sub_follow_obivan_kenobi_price_1 {
+    @apply flex items-center;
+  }
+  .sub_follow_obivan_kenobi_price_2 {
+    @apply flex items-center mt-[12px];
+  }
+  .sub_follow_obivan_kenobi_price_span_1 {
+    @apply text-[16px] sm:text-[20px] text-white font-semibold pl-[15px] pr-[15px] sm:px-[12px];
+  }
+  .sub_follow_obivan_kenobi_price_span_2Frst {
+    @apply text-[14px] sm:text-[16px] text-[#6e7174] font-medium ml-[13px] sm:ml-[5px] w-[150px] sm:w-auto;
+  }
+  .sub_follow_obivan_kenobi_price_span_2 {
+    @apply text-[14px] sm:text-[16px] text-[#6e7174] ml-[10px] sm:ml-0 font-medium w-[180px] sm:w-[320px];
+  }
+  .sub_follow_obivan_kenobi_price_span_2Last {
+    @apply text-[14px] sm:text-[16px] text-[#6e7174] font-medium ml-[25px] sm:ml-[16px];
+  }
+  .sub_follow_obivan_kenobi_price_svg {
+    @apply w-[24px] h-[24px];
+  }
+  .select_games {
+    @apply text-center mt-[30px] sm:mt-[50px];
+  }
+  .select_games_span {
+    @apply text-[14px] sm:text-[20px] text-white font-medium;
+  }
+  .send_block {
+    @apply text-center mt-[20px] sm:mt-[30px];
+  }
+  .send_block_span {
+    @apply text-[14px] sm:text-[20px] text-white font-medium;
+  }
+  .sub_obivan_kenobi_card_span_price {
+    @apply text-[#4DAEFC] text-[20px] xl:text-[32px] font-semibold;
+  }
+  .sub_obivan_kenobi_price {
+    @apply pt-[15px] pb-[25px];
+  }
+  .sub_obivan_kenobi_price_span {
+    @apply text-[#6e7174] text-[14px] xl:text-[20px] xl:px-[30px] font-semibold text-center mx-auto block px-[60px];
+  }
+  .tracked_accounts {
+    @apply mt-[50px] sm:mt-[70px];
+  }
+  .sub_tracked_accounts {
+    @apply flex justify-center items-center flex-wrap lg:flex-nowrap;
+  }
+  .sub_tracked_accounts_h2_block {
+    @apply w-[300px] xl:w-[450px] flex justify-center;
+  }
+  .sub_tracked_accounts_h2 {
+    @apply xl:text-[32px] text-[26px] text-white font-semibold text-center;
+  }
+  .sub_tracked_accounts_a_block {
+    @apply w-auto xl:w-1/3 mt-[10px] flex items-center;
+  }
+  .sub_tracked_accounts_a {
+    @apply text-[12px] sm:text-[16px] text-[#4DAEFC] lg:text-[#3c78a9] underline underline-offset-4 font-semibold xl:ml-[30px] 2xl:ml-[50px];
+  }
+  .filter_dub {
+    @apply flex justify-between items-center flex-wrap px-[15px] xl:pl-[105px] xl:pr-[90px] mt-[20px] sm:mt-[50px];
+  }
+  .subend_filter_basket {
+    @apply font-['Montserrat'] mx-0 mt-[20px] mb-[20px];
+  }
+  .subend_filter_basket_span_1 {
+    @apply text-white text-[14px] xl:text-[20px];
+  }
+  .subend_filter_basket_span_2 {
+    @apply text-[#4DAEFC] font-semibold;
+  }
+  .skin_price {
+    @apply flex items-end;
+  }
+  .skin {
+    @apply uppercase text-[14px] text-[#909193] block font-['Montserrat'] font-semibold mr-[10px];
+  }
+  .price_filter {
+    @apply flex items-center;
+  }
+  .price_2 {
+    @apply uppercase text-[14px] text-[#909193] font-['Montserrat'] font-semibold mr-[10px];
+  }
+  .price_2_basket {
+    @apply uppercase text-[14px] text-[#909193] font-['Montserrat'] font-semibold sm:mr-[10px];
+  }
+  .arrows_1 {
+    @apply mb-[5px];
+  }
+  .arrows_2 {
+    @apply mt-[5px];
+  }
+  .filter_2 {
+    @apply flex justify-center items-center;
+  }
+  .name_quantity {
+    @apply flex items-end;
+  }
+  .name {
+    @apply uppercase text-[14px] text-[#909193] font-['Montserrat'] font-semibold sm:mr-[10px];
+  }
+  .quantity_span {
+    @apply uppercase text-[14px] text-[#909193] block font-['Montserrat'] font-semibold sm:mr-[40px];
+  }
+  .quantity_filter {
+    @apply flex items-center;
+  }
+  .sub_quantity_filter_frst {
+    @apply flex sm:hidden border-b-2 border-[#9e9fa1] mx-[15px] mt-[30px];
+  }
+  .sub_quantity_filter_last {
+    @apply hidden sm:flex border-b-2 border-[#9e9fa1];
+  }
+  .sub_quantity_filter_svg {
+    @apply w-[24px] h-[24px] m-[5px];
+  }
+  .sub_quantity_filter_input {
+    @apply bg-transparent text-[#47484b] outline-none caret-white;
+  }
+  .arrows_filter {
+    @apply relative right-[35px] top-[2px];
+  }
+  .basket {
+    @apply flex justify-center items-center;
+  }
+  .card {
+    @apply font-['Montserrat'] px-[5px] sm:px-[15px] bg-[#2c3035] xl:h-[135px] rounded-lg pb-[10px] mt-[10px] w-full xl:pb-0 xl:pt-[10px];
+  }
+  .all_card {
+    @apply px-[15px] xl:pl-[90px] w-full -mt-[10px] sm:mt-[15px];
+  }
+  .sub_card {
+    @apply flex items-center;
+  }
+  .sect_card {
+    @apply flex items-start justify-between pb-[50px];
+  }
+  .scroll_bar {
+    @apply self-stretch w-[5px] bg-[#424447] rounded-md sm:mt-[25px] mr-[15px] xl:mr-[60px];
+  }
+  .band_scrollBar {
+    @apply w-[5px] h-[160px] bg-[#848587] rounded-md;
+  }
+  .bg_steel {
+    @apply mr-[10px] xl:mr-0 my-[5px] sm:my-[10px];
+  }
+  .bg_steel_img {
+    @apply mx-auto lg:w-[105px] lg:h-[100px];
+  }
+  .content_card {
+    @apply flex items-center flex-wrap justify-between w-full rounded-b-lg xl:pl-[40px] 2xl:pr-[70px] 2xl:pl-[100px];
+  }
+  .negev {
+    @apply mx-auto;
+  }
+  .B_link_card_1 {
+    @apply text-[#3677AB] text-[14px] lg:text-[20px] underline underline-offset-4 block w-[95px] lg:w-[130px] lg:mx-0 xl:mx-0 uppercase font-semibold;
+  }
+  .B_link_card_2 {
+    @apply text-[#4DAEFC] text-[14px] lg:text-[20px] underline underline-offset-4 block w-[95px] lg:w-[130px] lg:mx-0 xl:mx-0 uppercase font-semibold;
+  }
+  .B_link_card_3 {
+    @apply text-[#4EC75A] text-[14px] lg:text-[20px] block uppercase font-semibold;
+  }
+  .content_card_img {
+    @apply flex items-center flex-wrap my-[5px];
+  }
+  .content_card_img img {
+    @apply mx-[5px] my-[5px] lg:mx-[10px] lg:my-[10px] w-[50px] h-[50px] lg:w-[60px] lg:h-[60px];
+  }
+  .prgrf_card_block {
+    @apply mt-[5px] sm:mt-0;
+  }
+  .content_card_span_1_block {
+    @apply mt-[5px] sm:mt-0;
+  }
+  .prgrf_card {
+    @apply text-[13px] lg:text-[20px] text-white block text-center font-medium tracking-wide px-[5px] sm:px-0;
+  }
+  .content_card_span_1 {
+    @apply text-[#4DAEFC] text-[14px] lg:text-[20px] px-[5px] sm:px-[10px] md:px-0 font-semibold;
+  }
+  .card_price {
+    @apply text-center;
+  }
+  .card_price_button_db {
+    @apply block h-[35px] lg:h-[55px] bg-[#345289] rounded-lg xl:rounded-xl p-[10px] lg:px-[35px] lg:py-[15px] text-[#909499] font-['Montserrat'] uppercase text-[10px] lg:text-[16px] shadow-lg font-semibold;
+  }
+  .card_price_button {
+    @apply block h-[35px] lg:h-[55px] bg-[#3C73DD] rounded-lg xl:rounded-xl p-[10px] lg:px-[35px] lg:py-[15px] text-white font-['Montserrat'] uppercase text-[10px] lg:text-[16px] shadow-lg font-semibold;
+  }
+  .sub_content_card {
+    @apply flex justify-between pt-[18px] px-[10px];
+  }
+  .switch {
+    @apply bg-[#191c22] 2xl:bg-[#212327] font-['Montserrat'] mt-[20px] px-[20px] 2xl:px-[600px] 2xl:my-[55px];
+  }
+  .sub_switch {
+    @apply flex items-center justify-evenly pt-[15px];
+  }
+  .sub_switch_span_1 {
+    @apply text-[#4DAEFC] text-[14px] 2xl:text-[26px];
+  }
+  .sub_switch_span {
+    @apply text-[#8c8d90] text-[14px] 2xl:text-[26px];
+  }
+  .sub_switch_svg_1 {
+    @apply w-[9px] 2xl:w-[12px] h-[14px] 2xl:h-[20px];
+  }
+  .sub_switch_svg_2 {
+    @apply w-[9px] 2xl:w-[12px] h-[14px] 2xl:h-[20px];
+  }
+  footer {
+    @apply bg-[#191c22] font-['Montserrat'] px-[15px] 2xl:px-[90px];
+  }
+  .sub_footer {
+    @apply flex pt-[70px] justify-between;
+  }
+  .sub_footer_svg {
+    @apply w-[85px] xl:w-[135px] h-[26px] xl:h-[40px];
+  }
+  .contact {
+    @apply pb-[50px] xl:flex xl:items-center;
+  }
+  .contact_span {
+    @apply text-white text-[14px] xl:text-[20px] font-semibold xl:mr-[12px];
+  }
+  .sub_contact {
+    @apply flex justify-end mt-[10px] xl:ml-[12px] xl:mt-0;
+  }
+  .sub_contacnt_svg_1 {
+    @apply mr-[15px] w-[26px] xl:w-[42px] h-[26px] xl:h-[42px];
+  }
+  .sub_contacnt_svg_2 {
+    @apply w-[26px] xl:w-[42px] h-[26px] xl:h-[42px];
+  }
+  .error_loading {
+    @apply relative w-[320px] lg:w-[880px] h-[166px] lg:h-[335px] bg-[#212327] rounded-xl my-[10px] mx-auto font-['Montserrat'] hidden;
+  }
+  .error_svg {
+    @apply mx-auto relative top-[25px] lg:top-[50px] w-[30px] lg:w-[60px] h-[30px] lg:h-[60px];
+  }
+  .error_loading_prgrf {
+    @apply text-center text-white text-[16px] lg:text-[32px] font-semibold pt-[35px] lg:pt-[70px];
+  }
+  .error_loading_text {
+    @apply block text-[13px] lg:text-[26px] lg:w-[600px] lg:mx-auto text-center text-[#6e7073] px-[10px] mt-[10px] lg:mt-[25px];
+  }
+  .cross_3 {
+    @apply absolute right-0 mr-[25px] lg:mr-[35px] mt-[15px] lg:mt-[40px] w-[14px] h-[14px] lg:w-[22px] lg:h-[22px];
+  }
+  .success_loading {
+    @apply relative w-[320px] lg:w-[880px] h-[166px] lg:h-[335px] bg-[#212327] rounded-xl my-[10px] mx-auto font-['Montserrat'] hidden;
+  }
+  .success_svg {
+    @apply mx-auto relative top-[25px] lg:top-[50px] w-[30px] lg:w-[60px] h-[30px] lg:h-[60px];
+  }
+  .success_loading_prgrf {
+    @apply text-center text-white text-[16px] lg:text-[32px] font-semibold pt-[35px] lg:pt-[70px];
+  }
+  .success_loading_text {
+    @apply block text-[13px] lg:text-[26px] lg:w-[600px] lg:mx-auto text-center text-[#6e7073] px-[10px] mt-[10px] lg:mt-[25px];
+  }
+  .login_via_steam {
+    @apply mt-[15px] lg:mt-[50px] block mx-auto text-center w-[140px] lg:w-[200px] h-[36px] lg:h-[56px] bg-[#3C73DD] lg:bg-[#2e4b82] rounded-2xl p-[10px] lg:p-[17px] text-white lg:text-[#8b8d92] font-['Montserrat'] uppercase text-[10px] lg:text-[16px] shadow-lg font-semibold;
+  }
+  .new_account {
+    @apply bg-[#000] w-[320px] lg:w-[880px] h-[220px] lg:h-[410px] rounded-xl mx-auto my-[10px] font-['Montserrat'] hidden;
+  }
+  .header_new_account {
+    @apply bg-[#2c3035] relative h-[45px] lg:h-[100px] rounded-t-xl;
+  }
+  .prgrf_new_account {
+    @apply text-[16px] lg:text-[32px] text-white text-center pt-[10px] lg:pt-[25px] font-semibold;
+  }
+  .cross_3_new_account {
+    @apply absolute right-0 mr-[15px] lg:mr-[35px] mt-[15px] lg:mt-[40px] w-[14px] h-[14px] lg:w-[22px] lg:h-[22px];
+  }
+  .text_new_account {
+    @apply text-center block text-white text-[12px] mx-auto lg:text-[16px] mt-[10px] lg:pt-[50px] mb-[15px] lg:w-[730px];
+  }
+  .input_promo_new_account {
+    @apply mx-auto block border-[#414141] w-[290px] lg:w-[710px] border-2 text-[#c1c1c1] text-[12px] lg:text-[16px] px-[15px] py-[5px] bg-[#303030] h-[45px] xl:h-[50px] rounded-lg overflow-ellipsis;
+  }
+  .filters {
+    @apply hidden;
+  }
+  .sub_fiters {
+    @apply flex items-center justify-center bg-[#2C3035] w-[190px] py-[18px] my-[5px] rounded-lg;
+  }
+  .sub_fiters_svg_1 {
+    @apply w-[14px] h-[14px] ml-[10px];
+  }
+  .sub_fiters_svg_2 {
+    @apply w-[12px] h-[8px] ml-[10px];
+  }
+  .frst_fiter_span_white {
+    @apply text-[18px] text-white;
+  }
+  .frst_fiter_span {
+    @apply text-[18px] text-[#95979a];
+  }
+  .sub_fiters_2 {
+    @apply bg-[#2C3035] w-[190px] py-[18px] my-[5px] rounded-xl;
+  }
+  .sub_filters_2_block {
+    @apply flex items-center justify-center mt-[10px];
+  }
+  .sub_filter_2_svg {
+    @apply w-[14px] h-[14px] ml-[10px];
+  }
+  .accept_delete {
+    @apply relative w-[320px] lg:w-[880px] h-[166px] lg:h-[335px] bg-[#212327] rounded-xl my-[10px] mx-auto font-['Montserrat'] hidden;
+  }
+  .accept_delete_prgrf {
+    @apply block mx-auto text-center text-white text-[16px] lg:text-[32px] font-semibold pt-[35px] lg:pt-[70px] w-[320px] lg:w-[490px];
+  }
+  .accept_delete_login_via_steam {
+    @apply mt-[15px] lg:mt-[50px] block mx-auto text-center w-[140px] lg:w-[200px] h-[36px] lg:h-[56px] bg-[#3C73DD] rounded-2xl p-[10px] lg:p-[17px] text-white font-['Montserrat'] uppercase text-[10px] lg:text-[16px] shadow-lg font-semibold;
+  }
+  .choice_card {
+    @apply my-[10px] hidden;
+  }
+  .sub_choice_card_1_block {
+    @apply flex items-center m-auto relative w-[300px] md:w-[480px];
+  }
+  .sub_choice_card_1_block_svg {
+    @apply absolute right-[25px] w-[12px] h-[8px];
+  }
+  .sub_choice_card_2 {
+    @apply overflow-scroll mx-auto border-[#414141] w-[300px] md:w-[480px] border-2 text-[#4DAEFC] text-[10px] md:text-[13px] xl:text-[16px] xl:pl-[15px] p-[5px] lg:p-[10px] bg-[#303030] h-[80px] xl:h-[100px] rounded-lg;
+  }
+  .sub_choice_card_2_block {
+    @apply flex items-center justify-between pr-[15px] lg:pr-[30px] pt-[5px];
+  }
+  .sub_choice_card_2_block_span_2 {
+    @apply text-[#3a5d78];
+  }
+  .sub_choice_card_2_block_a_1 {
+    @apply text-[#4DAEFC] underline underline-offset-2;
+  }
+  .sub_choice_card_2_block_a_2 {
+    @apply text-[#3a5d78] underline underline-offset-2;
+  }
+  .block_currency {
+    @apply relative w-[190px] h-[130px] bg-[#2C3035] rounded-lg mx-auto my-[10px] border-2 border-[#515458] font-['Montserrat'] hidden;
+  }
+  .content_block_currency {
+    @apply text-start pl-[20px];
+  }
+  .rub_currency {
+    @apply text-white text-[18px] block pt-[18px];
+  }
+  .any_currency {
+    @apply block text-[18px] text-[#7b7d81] mt-[5px];
+  }
+}

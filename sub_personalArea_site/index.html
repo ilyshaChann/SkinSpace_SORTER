@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="sub_nav">
+                <svg class="svg_nav" viewBox="0 0 80 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_i_1_12)">
+                        <path
+                            d="M23.7916 10.6369H16.0322C15.5171 10.6369 15.0387 10.3696 14.7677 9.93051L10.6262 3.2202C10.4045 2.86092 10.013 2.64228 9.59156 2.64228H9.52603C9.00342 2.64228 8.57976 3.06694 8.57976 3.59079V3.69423C8.57976 3.89247 8.634 4.08691 8.73656 4.25641L12.7098 10.8225C13.0923 11.4546 12.6383 12.2629 11.9008 12.2629H3.98967C3.56604 12.2629 3.17292 12.042 2.95185 11.6798L0.119215 7.03852C-0.0730121 6.72355 -0.0293618 6.3183 0.225504 6.05172L5.69203 0.333978C5.896 0.120633 6.17802 0 6.47282 0H18.2915C18.7233 0 19.1228 0.229473 19.3412 0.602953L24.4914 9.41281C24.8082 9.9548 24.4183 10.6369 23.7916 10.6369Z"
+                            fill="url(#paint0_linear_1_12)" />
+                        <path
+                            d="M1.2084 14.3631L8.96777 14.3631C9.48289 14.3631 9.96132 14.6304 10.2323 15.0695L14.3738 21.7798C14.5955 22.1391 14.987 22.3577 15.4084 22.3577H15.474C15.9966 22.3577 16.4202 21.9331 16.4202 21.4092V21.3058C16.4202 21.1075 16.366 20.9131 16.2634 20.7436L12.2902 14.1775C11.9077 13.5454 12.3617 12.7371 13.0992 12.7371L21.0103 12.7371C21.434 12.7371 21.8271 12.958 22.0482 13.3202L24.8808 17.9615C25.073 18.2764 25.0294 18.6817 24.7745 18.9483L19.308 24.666C19.104 24.8794 18.822 25 18.5272 25L6.70853 25C6.27668 25 5.87719 24.7705 5.65885 24.397L0.508611 15.5872C0.191765 15.0452 0.581696 14.3631 1.2084 14.3631Z"
+                            fill="url(#paint1_linear_1_12)" />
+                    </g>
+                    <path
+                        d="M29.1311 8H25.2197C22.7672 8 22 9.15714 22 11.6257V13.5029C22 16.0614 23.0816 16.9871 25.5341 16.9871H28.8041C31.2566 16.9871 32.3508 16.0614 32.3508 13.5029V11.6257C32.3508 9.15714 31.5836 8 29.1311 8ZM29.9361 13.6314C29.9361 14.7886 29.5713 15.0329 28.7538 15.0329H25.597C24.7795 15.0329 24.4148 14.7886 24.4148 13.6314V11.4971C24.4148 10.5457 24.7166 9.96714 25.5844 9.96714H28.7664C29.6342 9.96714 29.9361 10.5457 29.9361 11.4971V13.6314Z"
+                        fill="white" />
+                    <path
+                        d="M44.2888 12.9371C44.3517 12.5514 44.3643 11.8829 44.3643 11.4586C44.3643 11.0214 44.3391 10.3143 44.2762 9.96714C43.9995 8.54 43.1192 8 41.371 8H34.1644V16.9871H36.5037V15.0329H40.5912L41.7105 17H44.3643L43.0814 14.7629C43.7983 14.4543 44.1505 13.8629 44.2888 12.9371ZM36.5037 9.96714H41.1571C41.5973 9.96714 41.9495 10.3271 41.9495 10.7771V12.14C41.9495 12.5771 41.5973 12.95 41.1571 12.95H36.5037V9.96714Z"
+                        fill="white" />
+                    <path d="M55.6348 8H45.4349V9.96714H49.3589V16.9871H51.7108V9.96714H55.6348V8Z" fill="white" />
+                    <path
+                        d="M67.1351 9.96714V8H56.9352V16.9871H67.1351V15.0329H59.2745V13.4771H65.9152V11.51H59.2745V9.96714H67.1351Z"
+                        fill="white" />
+                    <path
+                        d="M78.9245 12.9371C78.9874 12.5514 79 11.8829 79 11.4586C79 11.0214 78.9748 10.3143 78.912 9.96714C78.6353 8.54 77.7549 8 76.0067 8H68.8001V16.9871H71.1394V15.0329H75.2269L76.3463 17H79L77.7172 14.7629C78.434 14.4543 78.7862 13.8629 78.9245 12.9371ZM71.1394 9.96714H75.7929C76.2331 9.96714 76.5852 10.3271 76.5852 10.7771V12.14C76.5852 12.5771 76.2331 12.95 75.7929 12.95H71.1394V9.96714Z"
+                        fill="white" />
+                    <defs>
+                        <filter id="filter0_i_1_12" x="0" y="0" width="25" height="29" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="5" />
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_12" />
+                        </filter>
+                        <linearGradient id="paint0_linear_1_12" x1="22.0978" y1="21.4092" x2="1.00084" y2="14.8658"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#346EFA" />
+                            <stop offset="1" stop-color="#39A9FC" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_1_12" x1="22.0978" y1="21.4092" x2="1.00084" y2="14.8658"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#346EFA" />
+                            <stop offset="1" stop-color="#39A9FC" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="nav_obivan">
+                    <span class="nav_obivan_span">Obivan Kenobi</span>
+                    <img src="img/Rectangle_MiniObivan.png" class="nav_obivan_img" alt="">
+                    <svg class="nav_obivan_svg" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.35 0.316895L10 7.95023L17.65 0.316895L20 2.66689L10 12.6669L0 2.66689L2.35 0.316895Z" fill="white" fill-opacity="0.95"/>
+                    </svg>                        
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+            <div class="personal_area_obivan_kenobi">
+                <div class="obivan_kenobi">
+    
+                    <div class="sub_obivan_kenobi">
+                        <img src="img/RectangleMan.png" class="sub_obivan_kenobi_img" alt="Man">
+                        <div class="sub_obivan_kenobi_card">
+                            <h2 class="sub_obivan_kenobi_card_h2">Obivan Kenobi</h2>
+                            <div class="sub_obivan_kenobi_dateRegister">
+                                <span class="sub_obivan_kenobi_card_span">Дата регистрации:</span>
+                                <span class="sub_obivan_kenobi_card_spanDate">10.10.2020</span>
+                            </div>
+                            <div class="sub_obivan_kenobi_free_loading">
+                                <span class="sub_obivan_kenobi_card_span">Бесплатные загрузки в этом месяце:</span>
+                                <span class="sub_obivan_kenobi_card_spanDate">30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="obivan_kenobi_balance">
+                        <div class="obivan_kenobi_sub_balance">
+                            <span class="obivan_kenobi_sub_balance_span_1">Баланс:</span>
+                            <span class="obivan_kenobi_sub_balance_span_2">56565 Р</span>
+                        </div>
+                        <div class="obivan_kenobi_sub_topUp">
+                            <span class="obivan_kenobi_sub_topUp_span">(Пополнить линк на Бота в Телеграмм)</span>
+                            <div class="obivan_kenobi_sub_topUp_link">
+                                <a href="#" class="obivan_kenobi_sub_topUp_link_a">Пополнить</a>
+                                <svg class="obivan_kenobi_sub_topUp_link_svg" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.589844 10.59L5.16984 6L0.589843 1.41L1.99984 -6.16331e-08L7.99984 6L1.99984 12L0.589844 10.59Z" fill="#4DAEFC"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow_obivan_kenobi">
+                    <div class="sub_follow_obivan_kenobi">
+                        <h2 class="sub_follow_obivan_kenobi_h2">Подписка:</h2>
+                    </div>
+                    <div class="sub_follow_obivan_kenobi_priceAll">
+                        <div class="sub_follow_obivan_kenobi_price_1">
+                            <svg class="sub_follow_obivan_kenobi_price_svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5Z" fill="#4CAF50"/>
+                                <path d="M17.3008 7.2998L10.5008 14.0998L7.70078 11.2998L6.30078 12.6998L10.5008 16.8998L18.7008 8.6998L17.3008 7.2998Z" fill="#CCFF90"/>
+                            </svg>
+                            <span class="sub_follow_obivan_kenobi_price_span_1">0$ Free</span>
+                            <span class="sub_follow_obivan_kenobi_price_span_2Frst">(30 отчетов в месяц/5 аккаунтов)</span>
+                        </div>
+                        <div class="sub_follow_obivan_kenobi_price_2">
+                            <svg class="sub_follow_obivan_kenobi_price_svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.414 12L16.243 9.172C16.4306 8.98436 16.5361 8.72986 16.5361 8.4645C16.5361 8.19914 16.4306 7.94464 16.243 7.757C16.0554 7.56936 15.8009 7.46394 15.5355 7.46394C15.2701 7.46394 15.0156 7.56936 14.828 7.757L12 10.586L9.172 7.757C8.98436 7.56936 8.72986 7.46394 8.4645 7.46394C8.19914 7.46394 7.94464 7.56936 7.757 7.757C7.56936 7.94464 7.46394 8.19914 7.46394 8.4645C7.46394 8.72986 7.56936 8.98436 7.757 9.172L10.586 12L7.757 14.828C7.56936 15.0156 7.46394 15.2701 7.46394 15.5355C7.46394 15.8009 7.56936 16.0554 7.757 16.243C7.94464 16.4306 8.19914 16.5361 8.4645 16.5361C8.72986 16.5361 8.98436 16.4306 9.172 16.243L12 13.414L14.828 16.243C15.0156 16.4306 15.2701 16.5361 15.5355 16.5361C15.8009 16.5361 16.0554 16.4306 16.243 16.243C16.4306 16.0554 16.5361 15.8009 16.5361 15.5355C16.5361 15.2701 16.4306 15.0156 16.243 14.828L13.414 12ZM6 2H18C19.0609 2 20.0783 2.42143 20.8284 3.17157C21.5786 3.92172 22 4.93913 22 6V18C22 19.0609 21.5786 20.0783 20.8284 20.8284C20.0783 21.5786 19.0609 22 18 22H6C4.93913 22 3.92172 21.5786 3.17157 20.8284C2.42143 20.0783 2 19.0609 2 18V6C2 4.93913 2.42143 3.92172 3.17157 3.17157C3.92172 2.42143 4.93913 2 6 2Z" fill="#C85048"/>
+                            </svg>
+                            <span class="sub_follow_obivan_kenobi_price_span_1">1$ Trade</span>
+                            <span class="sub_follow_obivan_kenobi_price_span_2">(250 отчетов в месяц/Общий отчет/50 аккаунтов)</span>
+                        </div>
+                        <div class="sub_follow_obivan_kenobi_price_2">
+                            <svg class="sub_follow_obivan_kenobi_price_svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.414 12L16.243 9.172C16.4306 8.98436 16.5361 8.72986 16.5361 8.4645C16.5361 8.19914 16.4306 7.94464 16.243 7.757C16.0554 7.56936 15.8009 7.46394 15.5355 7.46394C15.2701 7.46394 15.0156 7.56936 14.828 7.757L12 10.586L9.172 7.757C8.98436 7.56936 8.72986 7.46394 8.4645 7.46394C8.19914 7.46394 7.94464 7.56936 7.757 7.757C7.56936 7.94464 7.46394 8.19914 7.46394 8.4645C7.46394 8.72986 7.56936 8.98436 7.757 9.172L10.586 12L7.757 14.828C7.56936 15.0156 7.46394 15.2701 7.46394 15.5355C7.46394 15.8009 7.56936 16.0554 7.757 16.243C7.94464 16.4306 8.19914 16.5361 8.4645 16.5361C8.72986 16.5361 8.98436 16.4306 9.172 16.243L12 13.414L14.828 16.243C15.0156 16.4306 15.2701 16.5361 15.5355 16.5361C15.8009 16.5361 16.0554 16.4306 16.243 16.243C16.4306 16.0554 16.5361 15.8009 16.5361 15.5355C16.5361 15.2701 16.4306 15.0156 16.243 14.828L13.414 12ZM6 2H18C19.0609 2 20.0783 2.42143 20.8284 3.17157C21.5786 3.92172 22 4.93913 22 6V18C22 19.0609 21.5786 20.0783 20.8284 20.8284C20.0783 21.5786 19.0609 22 18 22H6C4.93913 22 3.92172 21.5786 3.17157 20.8284C2.42143 20.0783 2 19.0609 2 18V6C2 4.93913 2.42143 3.92172 3.17157 3.17157C3.92172 2.42143 4.93913 2 6 2Z" fill="#C85048"/>
+                            </svg>
+                            <span class="sub_follow_obivan_kenobi_price_span_1">3$ Pro</span>
+                            <span class="sub_follow_obivan_kenobi_price_span_2Last">(No limit)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="select_games">
+                <span class="select_games_span">Выберите игры, чтобы включить их в отчет.</span>
+            </div>
+        </section>
+
+        <section>
+            <div class="game_block">
+                <div class="sub_game_block">
+                    <div class="sub_game_block-allGames">
+                        <img src="img/Rectangle_189_desktop.png" class="all_games_1" alt="">
+                        <img src="img/Rectangle_189.png" class="all_games_2" alt="">
+                        <span class="sub_game_block-allGames_span">Все игры</span>
+                    </div>
+                    <div class="cs">
+                        <img src="img/Rectangle_186.png" class="CS" alt="CS">
+                    </div>
+                </div>
+                <div class="sub_game_block-Dota">
+                    <div class="Dota">
+                        <img src="img/Rectangle_187.png" class="CS" alt="Dota">
+                    </div>
+                    <div class="Rust">
+                        <img src="img/Rectangle_188.png" class="CS" alt="Rust">
+                    </div>
+                </div>
+                <div class="TF">
+                    <img src="img/Rectangle_190.png" class="CS" alt="TF">
+                </div>
+            </div>
+            <div class="send_block">
+                <span class="send_block_span">Отправить отчет по всем аккаунтам.</span>
+            </div>
+            <div class="price">
+                <a href="#" id="logo"
+                    class="price_button">
+                    Отправить
+                </a>
+            </div>
+        </section>
+
+        <div class="add_block"></div>
+
+    <section class="for_bg-CS">
+        <div class="general_information">
+            <div class="sub_general_information">
+                <h2 class="sub_general_information_h2">Общая информация основного аккаунта</h2>
+            </div>
+            <div class="general_information_block">
+                <div class="sub_general_information_block_frst">
+                    <div class="sub_general_information_block_span_frst_block">
+                        <span class="sub_general_information_block_span_frst">Trade link:</span>
+                    </div>
+                    <div class="input_general_information_block">
+                        <input class="input_promo" value="ttps://steamcommunity.com/profiles/765611988..." type="text" name="" id="">
+                        <svg class="input_general_information_block_svg" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="white" fill-opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div class="sub_general_information_block_last">
+                        <span class="sub_general_information_block_span">Получить ссылку</span>
+                        <span class="sub_general_information_block_span">Применить</span>
+                    </div>
+                </div>
+                <div class="sub_general_information_block">
+                    <div class="sub_general_information_block_span_frst_block">
+                        <span class="sub_general_information_block_span_scnd">Telegram:</span>
+                    </div>
+                    <div class="input_general_information_block">
+                        <input class="input_promo" value="-" type="text" name="" id="">
+                        <svg class="input_general_information_block_svg" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.8342 4.48322L8.74863 1.4339L9.76507 0.417466C10.0434 0.139155 10.3853 0 10.7909 0C11.1961 0 11.5378 0.139155 11.8161 0.417466L12.8325 1.4339C13.1108 1.71221 13.2561 2.04812 13.2682 2.44163C13.2803 2.83465 13.1471 3.17032 12.8688 3.44863L11.8342 4.48322ZM10.7815 5.55411L3.08562 13.25H0V10.1644L7.69589 2.46849L10.7815 5.55411Z" fill="white" fill-opacity="0.5"/>
+                        </svg>   
+                    </div>
+                    <div class="sub_general_information_block_last">
+                        <span class="sub_general_information_block_span">Привязать</span>
+                    </div>
+                </div>
+                <div class="sub_general_information_block">
+                    <div class="sub_general_information_block_span_frst_block">
+                        <span class="sub_general_information_block_span_thrd">E-mail:</span>
+                    </div>
+                    <div class="input_general_information_block">
+                        <input class="input_promo" value="VasyaPupkin@mail.ru" type="text" name="" id="">
+                        <svg class="input_general_information_block_svg" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.8342 4.48322L8.74863 1.4339L9.76507 0.417466C10.0434 0.139155 10.3853 0 10.7909 0C11.1961 0 11.5378 0.139155 11.8161 0.417466L12.8325 1.4339C13.1108 1.71221 13.2561 2.04812 13.2682 2.44163C13.2803 2.83465 13.1471 3.17032 12.8688 3.44863L11.8342 4.48322ZM10.7815 5.55411L3.08562 13.25H0V10.1644L7.69589 2.46849L10.7815 5.55411Z" fill="white" fill-opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div class="sub_general_information_block_last">
+                        <span class="sub_general_information_block_span">Привязать</span>
+                    </div>
+                </div>
+                <div class="general_information_props">
+                    <h2 class="general_information_props_h2">Платежные реквизиты</h2>
+                </div>
+                
+                <div class="general_information_requisites">
+                    <div class="sub_general_information_requisites_frst">
+                        <div class="sub_general_information_block_span_frst_block">
+                            <span class="sub_general_information_block_span_BankCard">Банковская карта:</span>
+                        </div>
+                        <div class="input_general_information_block">
+                            <input class="input_promo" value="**** **** **** **99" type="text" name="" id="">
+                            <svg class="input_general_information_block_svg" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="white" fill-opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <div class="add_bank_card">
+                            <a href="#" class="add_bank_card_a">ДОБАВИТЬ БАНКОВСКУЮ КАРТУ</a>
+                            <svg class="add_bank_card_svg" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.589844 10.59L5.16984 6L0.589843 1.41L1.99984 -6.16331e-08L7.99984 6L1.99984 12L0.589844 10.59Z" fill="#4DAEFC"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sub_general_information_requisites">
+                        <div class="sub_general_information_block_span_frst_block">
+                            <span class="sub_general_information_block_span_qiwi">QIWI кошелек:</span>
+                        </div>
+                        <div class="input_general_information_block">
+                            <input class="input_promo" value="59595959595959" type="text" name="" id="">
+                            <svg class="input_general_information_block_svg" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8342 4.48322L8.74863 1.4339L9.76507 0.417466C10.0434 0.139155 10.3853 0 10.7909 0C11.1961 0 11.5378 0.139155 11.8161 0.417466L12.8325 1.4339C13.1108 1.71221 13.2561 2.04812 13.2682 2.44163C13.2803 2.83465 13.1471 3.17032 12.8688 3.44863L11.8342 4.48322ZM10.7815 5.55411L3.08562 13.25H0V10.1644L7.69589 2.46849L10.7815 5.55411Z" fill="white" fill-opacity="0.5"/>
+                            </svg>   
+                        </div>
+                        <div class="sub_general_information_block_last">
+                            <span class="sub_general_information_block_span">Сохранить</span>
+                        </div>
+                    </div>
+                    <div class="sub_general_information_requisites">
+                        <div class="sub_general_information_block_span_frst_block">
+                            <span class="sub_general_information_block_span_trc20">TRC- 20 кошелек:</span>
+                        </div>
+                        <div class="input_general_information_block">
+                            <input class="input_promo" value="59595959595959" type="text" name="" id="">
+                            <svg class="input_general_information_block_svg" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8342 4.48322L8.74863 1.4339L9.76507 0.417466C10.0434 0.139155 10.3853 0 10.7909 0C11.1961 0 11.5378 0.139155 11.8161 0.417466L12.8325 1.4339C13.1108 1.71221 13.2561 2.04812 13.2682 2.44163C13.2803 2.83465 13.1471 3.17032 12.8688 3.44863L11.8342 4.48322ZM10.7815 5.55411L3.08562 13.25H0V10.1644L7.69589 2.46849L10.7815 5.55411Z" fill="white" fill-opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <div class="sub_general_information_block_last">
+                            <span class="sub_general_information_block_span">Сохранить</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <section class="tracked_accounts_bg">
+    <section>
+        <div class="tracked_accounts">
+            <div class="sub_tracked_accounts">
+                <div class="w-auto xl:w-1/3"></div>
+                <div class="sub_tracked_accounts_h2_block">
+                    <h2 class="sub_tracked_accounts_h2">Отслеживаемые аккаунты</h2>
+                </div>  
+                <div class="sub_tracked_accounts_a_block">
+                    <a href="#" class="sub_tracked_accounts_a">ДОБАВИТЬ АККАУНТ</a>
+                    <svg class="add_bank_card_svg" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.589844 10.59L5.16984 6L0.589843 1.41L1.99984 -6.16331e-08L7.99984 6L1.99984 12L0.589844 10.59Z" fill="#4DAEFC"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="sub_quantity_filter_frst">
+            <svg class="sub_quantity_filter_svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.5 23.25L13.625 15.375C13 15.875 12.2812 16.2708 11.4688 16.5625C10.6562 16.8542 9.79167 17 8.875 17C6.60417 17 4.6825 16.2137 3.11 14.6412C1.53667 13.0679 0.75 11.1458 0.75 8.875C0.75 6.60417 1.53667 4.68208 3.11 3.10875C4.6825 1.53625 6.60417 0.75 8.875 0.75C11.1458 0.75 13.0679 1.53625 14.6412 3.10875C16.2137 4.68208 17 6.60417 17 8.875C17 9.79167 16.8542 10.6562 16.5625 11.4688C16.2708 12.2812 15.875 13 15.375 13.625L23.25 21.5L21.5 23.25ZM8.875 14.5C10.4375 14.5 11.7658 13.9533 12.86 12.86C13.9533 11.7658 14.5 10.4375 14.5 8.875C14.5 7.3125 13.9533 5.98417 12.86 4.89C11.7658 3.79667 10.4375 3.25 8.875 3.25C7.3125 3.25 5.98417 3.79667 4.89 4.89C3.79667 5.98417 3.25 7.3125 3.25 8.875C3.25 10.4375 3.79667 11.7658 4.89 12.86C5.98417 13.9533 7.3125 14.5 8.875 14.5Z" fill="white" fill-opacity="0.8"/>
+            </svg>
+            <input type="text" class="sub_quantity_filter_input" value="Steam ID, User name">
+        </div>
+        <div class="filter_dub">
+
+            <div class="">
+                <span class="skin">PHOTO</span>
+            </div>
+            <div class="">
+                <span class="name">NAME</span>
+            </div>
+            <div class="quantity_filter">
+                <span class="quantity_span">STEAM ID</span>
+                <div class="sub_quantity_filter_last">
+                    <svg class="sub_quantity_filter_svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.5 23.25L13.625 15.375C13 15.875 12.2812 16.2708 11.4688 16.5625C10.6562 16.8542 9.79167 17 8.875 17C6.60417 17 4.6825 16.2137 3.11 14.6412C1.53667 13.0679 0.75 11.1458 0.75 8.875C0.75 6.60417 1.53667 4.68208 3.11 3.10875C4.6825 1.53625 6.60417 0.75 8.875 0.75C11.1458 0.75 13.0679 1.53625 14.6412 3.10875C16.2137 4.68208 17 6.60417 17 8.875C17 9.79167 16.8542 10.6562 16.5625 11.4688C16.2708 12.2812 15.875 13 15.375 13.625L23.25 21.5L21.5 23.25ZM8.875 14.5C10.4375 14.5 11.7658 13.9533 12.86 12.86C13.9533 11.7658 14.5 10.4375 14.5 8.875C14.5 7.3125 13.9533 5.98417 12.86 4.89C11.7658 3.79667 10.4375 3.25 8.875 3.25C7.3125 3.25 5.98417 3.79667 4.89 4.89C3.79667 5.98417 3.25 7.3125 3.25 8.875C3.25 10.4375 3.79667 11.7658 4.89 12.86C5.98417 13.9533 7.3125 14.5 8.875 14.5Z" fill="white" fill-opacity="0.8"/>
+                    </svg>
+                    <input type="text" class="sub_quantity_filter_input" value="Steam ID, User name">
+                </div>
+            </div>
+
+            <div class="price_filter">
+                <span class="price_2">Выбор игр для отчета</span>
+                <div class="">
+                    <svg class="arrows_1" width="12" height="10" viewBox="0 0 12 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.68334 9.33331L10.3167 9.33331C10.975 9.33331 11.375 8.60831 11.0167 8.04998L6.70001 1.26664C6.62485 1.14789 6.52088 1.05006 6.39776 0.982279C6.27465 0.914494 6.13639 0.87895 5.99584 0.87895C5.8553 0.87895 5.71704 0.914494 5.59392 0.982279C5.47081 1.05006 5.36683 1.14789 5.29168 1.26664L0.983343 8.04998C0.902046 8.17567 0.856182 8.32098 0.850587 8.47056C0.844993 8.62015 0.879876 8.76848 0.951556 8.89989C1.02324 9.03131 1.12906 9.14094 1.25785 9.21722C1.38665 9.2935 1.53365 9.33361 1.68334 9.33331Z"
+                            fill="white" fill-opacity="0.85" />
+                    </svg>
+                    <svg class="arrows_2" width="12" height="10" viewBox="0 0 12 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.3167 0.666689L1.68332 0.666688C1.02499 0.666688 0.62499 1.39169 0.983324 1.95002L5.29999 8.73336C5.37515 8.85211 5.47912 8.94994 5.60224 9.01772C5.72535 9.08551 5.86361 9.12105 6.00416 9.12105C6.1447 9.12105 6.28296 9.08551 6.40608 9.01772C6.52919 8.94994 6.63317 8.85211 6.70832 8.73336L11.0167 1.95002C11.098 1.82433 11.1438 1.67902 11.1494 1.52944C11.155 1.37985 11.1201 1.23152 11.0484 1.10011C10.9768 0.968694 10.8709 0.859062 10.7421 0.782779C10.6133 0.706495 10.4663 0.666388 10.3167 0.666689Z"
+                            fill="white" fill-opacity="0.85" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="basket">
+                <div class="sub_basket">
+                    <span class="price_2_basket">Отправить отчет в телеграм</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    </section>
+
+    <section class="sect_card">
+        <div class="all_card">
+            <div class="card">
+                <div class="sub_card">
+                    <div class="bg_steel">
+                        <img src="img/Rectangle 190_card.png" class="bg_steel_img" alt="negev">
+                    </div>
+                    <div class="content_card">
+                        <div class="prgrf_card_block">
+                            <span class="prgrf_card">Вася Пупкин</span>
+                        </div>
+                        <div class="content_card_span_1_block">
+                            <span class="content_card_span_1">76561198083135565</span>
+                        </div>
+                        <div class="content_card_img">
+                            <img src="img/Frame 609.png" alt="all">
+                            <img src="img/Rectangle 194.png" alt="cs">
+                            <img src="img/Rectangle 195.png" alt="dota">
+                            <img src="img/Rectangle 196.png" alt="rust">
+                            <img src="img/Rectangle 197.png" alt="tf">
+                        </div>
+                        <div class="card_price">
+                            <a href="#" id="logo"
+                                class="card_price_button_db">
+                                Отправить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sub_card">
+                    <div class="bg_steel">
+                        <img src="img/Rectangle 190_card.png" class="bg_steel_img" alt="negev">
+                    </div>
+                    <div class="content_card">
+                        <div class="prgrf_card_block">
+                            <span class="prgrf_card">Вася Пупкин</span>
+                        </div>
+                        <div class="content_card_span_1_block">
+                            <span class="content_card_span_1">76561198083135565</span>
+                        </div>
+                        <div class="content_card_img">
+                            <img src="img/Frame 609.png" alt="all">
+                            <img src="img/Rectangle 194.png" alt="cs">
+                            <img src="img/Rectangle 195 (1).png" alt="dota">
+                            <img src="img/Rectangle 196 (1).png" alt="rust">
+                            <img src="img/Rectangle 197.png" alt="tf">
+                        </div>
+                        <div class="card_price">
+                            <a href="#" id="logo"
+                                class="card_price_button">
+                                Отправить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sub_card">
+                    <div class="bg_steel">
+                        <img src="img/Rectangle 190_card.png" class="bg_steel_img" alt="negev">
+                    </div>
+                    <div class="content_card">
+                        <div class="prgrf_card_block">
+                            <span class="prgrf_card">Вася Пупкин</span>
+                        </div>
+                        <div class="content_card_span_1_block">
+                            <span class="content_card_span_1">76561198083135565</span>
+                        </div>
+                        <div class="content_card_img">
+                            <img src="img/Frame 609.png" alt="all">
+                            <img src="img/Rectangle 194.png" alt="cs">
+                            <img src="img/Rectangle 195 (1).png" alt="dota">
+                            <img src="img/Rectangle 196 (1).png" alt="rust">
+                            <img src="img/Rectangle 197.png" alt="tf">
+                        </div>
+                        <div class="card_price">
+                            <a href="#" id="logo"
+                                class="card_price_button">
+                                Отправить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sub_card">
+                    <div class="bg_steel">
+                        <img src="img/Rectangle 190_card.png" class="bg_steel_img" alt="negev">
+                    </div>
+                    <div class="content_card">
+                        <div class="prgrf_card_block">
+                            <span class="prgrf_card">Вася Пупкин</span>
+                        </div>
+                        <div class="content_card_span_1_block">
+                            <span class="content_card_span_1">76561198083135565</span>
+                        </div>
+                        <div class="content_card_img">
+                            <img src="img/Frame 609.png" alt="all">
+                            <img src="img/Rectangle 194.png" alt="cs">
+                            <img src="img/Rectangle 195 (1).png" alt="dota">
+                            <img src="img/Rectangle 196 (1).png" alt="rust">
+                            <img src="img/Rectangle 197.png" alt="tf">
+                        </div>
+                        <div class="card_price">
+                            <a href="#" id="logo"
+                                class="card_price_button">
+                                Отправить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sub_card">
+                    <div class="bg_steel">
+                        <img src="img/Rectangle 190_card.png" class="bg_steel_img" alt="negev">
+                    </div>
+                    <div class="content_card">
+                        <div class="prgrf_card_block">
+                            <span class="prgrf_card">Вася Пупкин</span>
+                        </div>
+                        <div class="content_card_span_1_block">
+                            <span class="content_card_span_1">76561198083135565</span>
+                        </div>
+                        <div class="content_card_img">
+                            <img src="img/Frame 609.png" alt="all">
+                            <img src="img/Rectangle 194.png" alt="cs">
+                            <img src="img/Rectangle 195 (1).png" alt="dota">
+                            <img src="img/Rectangle 196 (1).png" alt="rust">
+                            <img src="img/Rectangle 197.png" alt="tf">
+                        </div>
+                        <div class="card_price">
+                            <a href="#" id="logo"
+                                class="card_price_button">
+                                Отправить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sub_card">
+                    <div class="bg_steel">
+                        <img src="img/Rectangle 190_card.png" class="bg_steel_img" alt="negev">
+                    </div>
+                    <div class="content_card">
+                        <div class="prgrf_card_block">
+                            <span class="prgrf_card">Вася Пупкин</span>
+                        </div>
+                        <div class="content_card_span_1_block">
+                            <span class="content_card_span_1">76561198083135565</span>
+                        </div>
+                        <div class="content_card_img">
+                            <img src="img/Frame 609.png" alt="all">
+                            <img src="img/Rectangle 194.png" alt="cs">
+                            <img src="img/Rectangle 195 (1).png" alt="dota">
+                            <img src="img/Rectangle 196 (1).png" alt="rust">
+                            <img src="img/Rectangle 197.png" alt="tf">
+                        </div>
+                        <div class="card_price">
+                            <a href="#" id="logo"
+                                class="card_price_button">
+                                Отправить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sub_card">
+                    <div class="bg_steel">
+                        <img src="img/Rectangle 190_card.png" class="bg_steel_img" alt="negev">
+                    </div>
+                    <div class="content_card">
+                        <div class="prgrf_card_block">
+                            <span class="prgrf_card">Вася Пупкин</span>
+                        </div>
+                        <div class="content_card_span_1_block">
+                            <span class="content_card_span_1">76561198083135565</span>
+                        </div>
+                        <div class="content_card_img">
+                            <img src="img/Frame 609.png" alt="all">
+                            <img src="img/Rectangle 194.png" alt="cs">
+                            <img src="img/Rectangle 195 (1).png" alt="dota">
+                            <img src="img/Rectangle 196 (1).png" alt="rust">
+                            <img src="img/Rectangle 197.png" alt="tf">
+                        </div>
+                        <div class="card_price">
+                            <a href="#" id="logo"
+                                class="card_price_button">
+                                Отправить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sub_card">
+                    <div class="bg_steel">
+                        <img src="img/Rectangle 190_card.png" class="bg_steel_img" alt="negev">
+                    </div>
+                    <div class="content_card">
+                        <div class="prgrf_card_block">
+                            <span class="prgrf_card">Вася Пупкин</span>
+                        </div>
+                        <div class="content_card_span_1_block">
+                            <span class="content_card_span_1">76561198083135565</span>
+                        </div>
+                        <div class="content_card_img">
+                            <img src="img/Frame 609.png" alt="all">
+                            <img src="img/Rectangle 194.png" alt="cs">
+                            <img src="img/Rectangle 195 (1).png" alt="dota">
+                            <img src="img/Rectangle 196 (1).png" alt="rust">
+                            <img src="img/Rectangle 197.png" alt="tf">
+                        </div>
+                        <div class="card_price">
+                            <a href="#" id="logo"
+                                class="card_price_button">
+                                Отправить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sub_card">
+                    <div class="bg_steel">
+                        <img src="img/Rectangle 190_card.png" class="bg_steel_img" alt="negev">
+                    </div>
+                    <div class="content_card">
+                        <div class="prgrf_card_block">
+                            <span class="prgrf_card">Вася Пупкин</span>
+                        </div>
+                        <div class="content_card_span_1_block">
+                            <span class="content_card_span_1">76561198083135565</span>
+                        </div>
+                        <div class="content_card_img">
+                            <img src="img/Frame 609.png" alt="all">
+                            <img src="img/Rectangle 194.png" alt="cs">
+                            <img src="img/Rectangle 195 (1).png" alt="dota">
+                            <img src="img/Rectangle 196 (1).png" alt="rust">
+                            <img src="img/Rectangle 197.png" alt="tf">
+                        </div>
+                        <div class="card_price">
+                            <a href="#" id="logo"
+                                class="card_price_button">
+                                Отправить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="sub_card">
+                    <div class="bg_steel">
+                        <img src="img/Rectangle 190_card.png" class="bg_steel_img" alt="negev">
+                    </div>
+                    <div class="content_card">
+                        <div class="prgrf_card_block">
+                            <span class="prgrf_card">Вася Пупкин</span>
+                        </div>
+                        <div class="content_card_span_1_block">
+                            <span class="content_card_span_1">76561198083135565</span>
+                        </div>
+                        <div class="content_card_img">
+                            <img src="img/Frame 609.png" alt="all">
+                            <img src="img/Rectangle 194.png" alt="cs">
+                            <img src="img/Rectangle 195 (1).png" alt="dota">
+                            <img src="img/Rectangle 196 (1).png" alt="rust">
+                            <img src="img/Rectangle 197.png" alt="tf">
+                        </div>
+                        <div class="card_price">
+                            <a href="#" id="logo"
+                                class="card_price_button">
+                                Отправить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll_bar">
+            <div class="band_scrollBar"></div>
+        </div>
+
+    </section>
+
+    <section>
+        <!--<div class="switch">
+            <div class="sub_switch">
+                <svg class="sub_switch_svg_1" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.97833 1.645L3.635 7L8.97833 12.355L7.33333 14L0.333332 7L7.33333 0L8.97833 1.645Z" fill="white" fill-opacity="0.5"/>
+                </svg>
+                <span class="sub_switch_span_1">1</span>
+                <span class="sub_switch_span">2</span>
+                <span class="sub_switch_span">3</span>
+                <span class="sub_switch_span">4</span>
+                <span class="sub_switch_span">5</span>
+                <span class="sub_switch_span">6</span>
+                <span class="sub_switch_span">...</span>
+                <span class="sub_switch_span">100</span>
+                <svg class="sub_switch_svg_2" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.0216675 12.355L5.365 7L0.0216675 1.645L1.66667 0L8.66667 7L1.66667 14L0.0216675 12.355Z" fill="white"/>
+                </svg>
+            </div>
+        </div>
+        -->
+        <footer>
+            <div class="sub_footer">
+                <svg class="sub_footer_svg" viewBox="0 0 80 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_i_1_12)">
+                        <path
+                            d="M23.7916 10.6369H16.0322C15.5171 10.6369 15.0387 10.3696 14.7677 9.93051L10.6262 3.2202C10.4045 2.86092 10.013 2.64228 9.59156 2.64228H9.52603C9.00342 2.64228 8.57976 3.06694 8.57976 3.59079V3.69423C8.57976 3.89247 8.634 4.08691 8.73656 4.25641L12.7098 10.8225C13.0923 11.4546 12.6383 12.2629 11.9008 12.2629H3.98967C3.56604 12.2629 3.17292 12.042 2.95185 11.6798L0.119215 7.03852C-0.0730121 6.72355 -0.0293618 6.3183 0.225504 6.05172L5.69203 0.333978C5.896 0.120633 6.17802 0 6.47282 0H18.2915C18.7233 0 19.1228 0.229473 19.3412 0.602953L24.4914 9.41281C24.8082 9.9548 24.4183 10.6369 23.7916 10.6369Z"
+                            fill="url(#paint0_linear_1_12)" />
+                        <path
+                            d="M1.2084 14.3631L8.96777 14.3631C9.48289 14.3631 9.96132 14.6304 10.2323 15.0695L14.3738 21.7798C14.5955 22.1391 14.987 22.3577 15.4084 22.3577H15.474C15.9966 22.3577 16.4202 21.9331 16.4202 21.4092V21.3058C16.4202 21.1075 16.366 20.9131 16.2634 20.7436L12.2902 14.1775C11.9077 13.5454 12.3617 12.7371 13.0992 12.7371L21.0103 12.7371C21.434 12.7371 21.8271 12.958 22.0482 13.3202L24.8808 17.9615C25.073 18.2764 25.0294 18.6817 24.7745 18.9483L19.308 24.666C19.104 24.8794 18.822 25 18.5272 25L6.70853 25C6.27668 25 5.87719 24.7705 5.65885 24.397L0.508611 15.5872C0.191765 15.0452 0.581696 14.3631 1.2084 14.3631Z"
+                            fill="url(#paint1_linear_1_12)" />
+                    </g>
+                    <path
+                        d="M29.1311 8H25.2197C22.7672 8 22 9.15714 22 11.6257V13.5029C22 16.0614 23.0816 16.9871 25.5341 16.9871H28.8041C31.2566 16.9871 32.3508 16.0614 32.3508 13.5029V11.6257C32.3508 9.15714 31.5836 8 29.1311 8ZM29.9361 13.6314C29.9361 14.7886 29.5713 15.0329 28.7538 15.0329H25.597C24.7795 15.0329 24.4148 14.7886 24.4148 13.6314V11.4971C24.4148 10.5457 24.7166 9.96714 25.5844 9.96714H28.7664C29.6342 9.96714 29.9361 10.5457 29.9361 11.4971V13.6314Z"
+                        fill="white" />
+                    <path
+                        d="M44.2888 12.9371C44.3517 12.5514 44.3643 11.8829 44.3643 11.4586C44.3643 11.0214 44.3391 10.3143 44.2762 9.96714C43.9995 8.54 43.1192 8 41.371 8H34.1644V16.9871H36.5037V15.0329H40.5912L41.7105 17H44.3643L43.0814 14.7629C43.7983 14.4543 44.1505 13.8629 44.2888 12.9371ZM36.5037 9.96714H41.1571C41.5973 9.96714 41.9495 10.3271 41.9495 10.7771V12.14C41.9495 12.5771 41.5973 12.95 41.1571 12.95H36.5037V9.96714Z"
+                        fill="white" />
+                    <path d="M55.6348 8H45.4349V9.96714H49.3589V16.9871H51.7108V9.96714H55.6348V8Z" fill="white" />
+                    <path
+                        d="M67.1351 9.96714V8H56.9352V16.9871H67.1351V15.0329H59.2745V13.4771H65.9152V11.51H59.2745V9.96714H67.1351Z"
+                        fill="white" />
+                    <path
+                        d="M78.9245 12.9371C78.9874 12.5514 79 11.8829 79 11.4586C79 11.0214 78.9748 10.3143 78.912 9.96714C78.6353 8.54 77.7549 8 76.0067 8H68.8001V16.9871H71.1394V15.0329H75.2269L76.3463 17H79L77.7172 14.7629C78.434 14.4543 78.7862 13.8629 78.9245 12.9371ZM71.1394 9.96714H75.7929C76.2331 9.96714 76.5852 10.3271 76.5852 10.7771V12.14C76.5852 12.5771 76.2331 12.95 75.7929 12.95H71.1394V9.96714Z"
+                        fill="white" />
+                    <defs>
+                        <filter id="filter0_i_1_12" x="0" y="0" width="25" height="29" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="5" />
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_12" />
+                        </filter>
+                        <linearGradient id="paint0_linear_1_12" x1="22.0978" y1="21.4092" x2="1.00084" y2="14.8658"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#346EFA" />
+                            <stop offset="1" stop-color="#39A9FC" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_1_12" x1="22.0978" y1="21.4092" x2="1.00084" y2="14.8658"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#346EFA" />
+                            <stop offset="1" stop-color="#39A9FC" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="contact">
+                    <span class="contact_span">Связаться с нами:</span>
+                    <div class="sub_contact">
+                        <svg class="sub_contacnt_svg_1" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 0.5C6.1 0.5 0.5 6.1 0.5 13C0.5 19.9 6.1 25.5 13 25.5C19.9 25.5 25.5 19.9 25.5 13C25.5 6.1 19.9 0.5 13 0.5ZM18.8 9C18.6125 10.975 17.8 15.775 17.3875 17.9875C17.2125 18.925 16.8625 19.2375 16.5375 19.275C15.8125 19.3375 15.2625 18.8 14.5625 18.3375C13.4625 17.6125 12.8375 17.1625 11.775 16.4625C10.5375 15.65 11.3375 15.2 12.05 14.475C12.2375 14.2875 15.4375 11.375 15.5 11.1125C15.5087 11.0727 15.5075 11.0315 15.4966 10.9923C15.4857 10.953 15.4654 10.9171 15.4375 10.8875C15.3625 10.825 15.2625 10.85 15.175 10.8625C15.0625 10.8875 13.3125 12.05 9.9 14.35C9.4 14.6875 8.95 14.8625 8.55 14.85C8.1 14.8375 7.25 14.6 6.6125 14.3875C5.825 14.1375 5.2125 14 5.2625 13.5625C5.2875 13.3375 5.6 13.1125 6.1875 12.875C9.8375 11.2875 12.2625 10.2375 13.475 9.7375C16.95 8.2875 17.6625 8.0375 18.1375 8.0375C18.2375 8.0375 18.475 8.0625 18.625 8.1875C18.75 8.2875 18.7875 8.425 18.8 8.525C18.7875 8.6 18.8125 8.825 18.8 9Z" fill="white"/>
+                        </svg>    
+                        <svg class="sub_contacnt_svg_2" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.8412 0.5H9.17125C2.16625 0.5 0.5 2.16625 0.5 9.15875V16.8288C0.5 23.8325 2.15375 25.5 9.15875 25.5H16.8288C23.8325 25.5 25.5 23.8463 25.5 16.8412V9.17125C25.5 2.16625 23.8463 0.5 16.8412 0.5ZM20.6825 18.3375H18.8587C18.1688 18.3375 17.9613 17.7787 16.7238 16.5413C15.6438 15.5 15.1875 15.37 14.9137 15.37C14.5363 15.37 14.4325 15.4738 14.4325 15.995V17.635C14.4325 18.0788 14.2887 18.3387 13.13 18.3387C12.0054 18.2632 10.9149 17.9215 9.94825 17.3419C8.98159 16.7623 8.16646 15.9613 7.57 15.005C6.15396 13.2425 5.16868 11.1739 4.6925 8.96375C4.6925 8.69 4.79625 8.4425 5.3175 8.4425H7.14C7.60875 8.4425 7.7775 8.65125 7.96125 9.1325C8.84625 11.7375 10.3562 14.0025 10.9688 14.0025C11.2037 14.0025 11.3063 13.8988 11.3063 13.3125V10.63C11.2288 9.40625 10.5787 9.3025 10.5787 8.86C10.5871 8.74329 10.6406 8.63441 10.7279 8.55647C10.8151 8.47853 10.9293 8.43765 11.0463 8.4425H13.9113C14.3025 8.4425 14.4325 8.6375 14.4325 9.10625V12.7262C14.4325 13.1175 14.6012 13.2475 14.7188 13.2475C14.9537 13.2475 15.135 13.1175 15.565 12.6875C16.4886 11.5612 17.2432 10.3063 17.805 8.9625C17.8624 8.80108 17.9711 8.66288 18.1144 8.56899C18.2577 8.4751 18.4278 8.43068 18.5988 8.4425H20.4225C20.9688 8.4425 21.085 8.71625 20.9688 9.10625C20.3056 10.5918 19.4851 12.0019 18.5212 13.3125C18.325 13.6125 18.2463 13.7688 18.5212 14.12C18.7025 14.3938 19.3412 14.9275 19.7712 15.435C20.3961 16.0583 20.915 16.7795 21.3075 17.57C21.4637 18.0775 21.2025 18.3387 20.6825 18.3387V18.3375Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!--Доп.компоненты-->
+
+    <!--Ошибка добавления аккаунта-->
+
+    <div class="error_loading">
+        <div class="error_loading_content">
+            <svg class="cross_3" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12.775 1.23413C12.6902 1.14915 12.5894 1.08173 12.4785 1.03573C12.3676 0.989731 12.2488 0.966054 12.1287 0.966054C12.0087 0.966054 11.8898 0.989731 11.7789 1.03573C11.668 1.08173 11.5673 1.14915 11.4825 1.23413L6.99996 5.70746L2.51746 1.22496C2.43259 1.14009 2.33184 1.07277 2.22096 1.02684C2.11008 0.980915 1.99123 0.957275 1.87121 0.957275C1.75119 0.957275 1.63235 0.980915 1.52146 1.02684C1.41058 1.07277 1.30983 1.14009 1.22496 1.22496C1.14009 1.30983 1.07277 1.41058 1.02684 1.52146C0.980915 1.63235 0.957275 1.75119 0.957275 1.87121C0.957275 1.99123 0.980915 2.11008 1.02684 2.22096C1.07277 2.33184 1.14009 2.43259 1.22496 2.51746L5.70746 6.99996L1.22496 11.4825C1.14009 11.5673 1.07277 11.6681 1.02684 11.779C0.980915 11.8899 0.957275 12.0087 0.957275 12.1287C0.957275 12.2487 0.980915 12.3676 1.02684 12.4785C1.07277 12.5893 1.14009 12.6901 1.22496 12.775C1.30983 12.8598 1.41058 12.9272 1.52146 12.9731C1.63235 13.019 1.75119 13.0426 1.87121 13.0426C1.99123 13.0426 2.11008 13.019 2.22096 12.9731C2.33184 12.9272 2.43259 12.8598 2.51746 12.775L6.99996 8.29246L11.4825 12.775C11.5673 12.8598 11.6681 12.9272 11.779 12.9731C11.8899 13.019 12.0087 13.0426 12.1287 13.0426C12.2487 13.0426 12.3676 13.019 12.4785 12.9731C12.5893 12.9272 12.6901 12.8598 12.775 12.775C12.8598 12.6901 12.9272 12.5893 12.9731 12.4785C13.019 12.3676 13.0426 12.2487 13.0426 12.1287C13.0426 12.0087 13.019 11.8899 12.9731 11.779C12.9272 11.6681 12.8598 11.5673 12.775 11.4825L8.29246 6.99996L12.775 2.51746C13.1233 2.16913 13.1233 1.58246 12.775 1.23413Z"
+                    fill="white" />
+            </svg>
+            <svg class="error_svg" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M15 0C16.377 0 17.7051 0.175781 18.9844 0.527344C20.2637 0.878906 21.4551 1.38672 22.5586 2.05078C23.6621 2.71484 24.6729 3.49609 25.5908 4.39453C26.5088 5.29297 27.2949 6.30371 27.9492 7.42676C28.6035 8.5498 29.1064 9.74609 29.458 11.0156C29.8096 12.2852 29.9902 13.6133 30 15C30 16.377 29.8242 17.7051 29.4727 18.9844C29.1211 20.2637 28.6133 21.4551 27.9492 22.5586C27.2852 23.6621 26.5039 24.6729 25.6055 25.5908C24.707 26.5088 23.6963 27.2949 22.5732 27.9492C21.4502 28.6035 20.2539 29.1064 18.9844 29.458C17.7148 29.8096 16.3867 29.9902 15 30C13.623 30 12.2949 29.8242 11.0156 29.4727C9.73633 29.1211 8.54492 28.6133 7.44141 27.9492C6.33789 27.2852 5.32715 26.5039 4.40918 25.6055C3.49121 24.707 2.70508 23.6963 2.05078 22.5732C1.39648 21.4502 0.893555 20.2539 0.541992 18.9844C0.19043 17.7148 0.00976562 16.3867 0 15C0 13.623 0.175781 12.2949 0.527344 11.0156C0.878906 9.73633 1.38672 8.54492 2.05078 7.44141C2.71484 6.33789 3.49609 5.32715 4.39453 4.40918C5.29297 3.49121 6.30371 2.70508 7.42676 2.05078C8.5498 1.39648 9.74609 0.893555 11.0156 0.541992C12.2852 0.19043 13.6133 0.00976562 15 0ZM16.6553 15L21.665 9.99023L20.0098 8.33496L15 13.3447L9.99023 8.33496L8.33496 9.99023L13.3447 15L8.33496 20.0098L9.99023 21.665L15 16.6553L20.0098 21.665L21.665 20.0098L16.6553 15Z"
+                    fill="#E9585B" />
+            </svg>
+            <h2 class="error_loading_prgrf">Ошибка добавления аккаунта!</h2>
+            <span class="error_loading_text">Проверьте правильность ввода данных 
+                и попробуйте снова.</span>
+        </div>
+    </div>
+
+
+    <!--Успешное добавления аккаунта-->
+
+    <div class="success_loading">
+        <div class="success_loading_content">
+            <svg class="cross_3" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12.775 1.23413C12.6902 1.14915 12.5894 1.08173 12.4785 1.03573C12.3676 0.989731 12.2488 0.966054 12.1287 0.966054C12.0087 0.966054 11.8898 0.989731 11.7789 1.03573C11.668 1.08173 11.5673 1.14915 11.4825 1.23413L6.99996 5.70746L2.51746 1.22496C2.43259 1.14009 2.33184 1.07277 2.22096 1.02684C2.11008 0.980915 1.99123 0.957275 1.87121 0.957275C1.75119 0.957275 1.63235 0.980915 1.52146 1.02684C1.41058 1.07277 1.30983 1.14009 1.22496 1.22496C1.14009 1.30983 1.07277 1.41058 1.02684 1.52146C0.980915 1.63235 0.957275 1.75119 0.957275 1.87121C0.957275 1.99123 0.980915 2.11008 1.02684 2.22096C1.07277 2.33184 1.14009 2.43259 1.22496 2.51746L5.70746 6.99996L1.22496 11.4825C1.14009 11.5673 1.07277 11.6681 1.02684 11.779C0.980915 11.8899 0.957275 12.0087 0.957275 12.1287C0.957275 12.2487 0.980915 12.3676 1.02684 12.4785C1.07277 12.5893 1.14009 12.6901 1.22496 12.775C1.30983 12.8598 1.41058 12.9272 1.52146 12.9731C1.63235 13.019 1.75119 13.0426 1.87121 13.0426C1.99123 13.0426 2.11008 13.019 2.22096 12.9731C2.33184 12.9272 2.43259 12.8598 2.51746 12.775L6.99996 8.29246L11.4825 12.775C11.5673 12.8598 11.6681 12.9272 11.779 12.9731C11.8899 13.019 12.0087 13.0426 12.1287 13.0426C12.2487 13.0426 12.3676 13.019 12.4785 12.9731C12.5893 12.9272 12.6901 12.8598 12.775 12.775C12.8598 12.6901 12.9272 12.5893 12.9731 12.4785C13.019 12.3676 13.0426 12.2487 13.0426 12.1287C13.0426 12.0087 13.019 11.8899 12.9731 11.779C12.9272 11.6681 12.8598 11.5673 12.775 11.4825L8.29246 6.99996L12.775 2.51746C13.1233 2.16913 13.1233 1.58246 12.775 1.23413Z"
+                    fill="white" />
+            </svg>
+            <svg class="success_svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.9173 35.2497L19.5736 28.9059C19.0388 28.3712 18.3826 28.1038 17.6048 28.1038C16.827 28.1038 16.1465 28.3955 15.5632 28.9788C15.0284 29.5136 14.7611 30.1941 14.7611 31.0205C14.7611 31.8469 15.0284 32.5275 15.5632 33.0622L23.8756 41.3747C24.4104 41.9094 25.0909 42.1768 25.9173 42.1768C26.7437 42.1768 27.4243 41.9094 27.959 41.3747L44.5111 24.8226C45.0458 24.2879 45.3131 23.6316 45.3131 22.8538C45.3131 22.0761 45.0215 21.3955 44.4382 20.8122C43.9034 20.2775 43.2229 20.0101 42.3965 20.0101C41.5701 20.0101 40.8895 20.2775 40.3548 20.8122L25.9173 35.2497ZM30.0006 59.1663C25.9659 59.1663 22.1743 58.4002 18.6257 56.868C15.077 55.3377 11.9902 53.2601 9.36523 50.6351C6.74023 48.0101 4.6626 44.9233 3.13232 41.3747C1.6001 37.8261 0.833984 34.0344 0.833984 29.9997C0.833984 25.965 1.6001 22.1733 3.13232 18.6247C4.6626 15.0761 6.74023 11.9893 9.36523 9.36426C11.9902 6.73926 15.077 4.66065 18.6257 3.12842C22.1743 1.59815 25.9659 0.833008 30.0006 0.833008C34.0354 0.833008 37.827 1.59815 41.3756 3.12842C44.9243 4.66065 48.0111 6.73926 50.6361 9.36426C53.2611 11.9893 55.3387 15.0761 56.869 18.6247C58.4012 22.1733 59.1673 25.965 59.1673 29.9997C59.1673 34.0344 58.4012 37.8261 56.869 41.3747C55.3387 44.9233 53.2611 48.0101 50.6361 50.6351C48.0111 53.2601 44.9243 55.3377 41.3756 56.868C37.827 58.4002 34.0354 59.1663 30.0006 59.1663Z" fill="#4EC75A"/>
+            </svg>                
+            <h2 class="success_loading_prgrf">Новый аккаунт успешно добавлен!</h2>
+            <span class="success_loading_text">Вы сможете найти его внизу списка 
+                всех отслеживаемых аккаунтов.</span>
+        </div>
+    </div>
+
+    <!--Добавление нового аккаунта-->
+
+    <div class="new_account">
+        <div class="header_new_account">
+            <svg class="cross_3_new_account" viewBox="0 0 14 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12.775 1.23413C12.6902 1.14915 12.5894 1.08173 12.4785 1.03573C12.3676 0.989731 12.2488 0.966054 12.1287 0.966054C12.0087 0.966054 11.8898 0.989731 11.7789 1.03573C11.668 1.08173 11.5673 1.14915 11.4825 1.23413L6.99996 5.70746L2.51746 1.22496C2.43259 1.14009 2.33184 1.07277 2.22096 1.02684C2.11008 0.980915 1.99123 0.957275 1.87121 0.957275C1.75119 0.957275 1.63235 0.980915 1.52146 1.02684C1.41058 1.07277 1.30983 1.14009 1.22496 1.22496C1.14009 1.30983 1.07277 1.41058 1.02684 1.52146C0.980915 1.63235 0.957275 1.75119 0.957275 1.87121C0.957275 1.99123 0.980915 2.11008 1.02684 2.22096C1.07277 2.33184 1.14009 2.43259 1.22496 2.51746L5.70746 6.99996L1.22496 11.4825C1.14009 11.5673 1.07277 11.6681 1.02684 11.779C0.980915 11.8899 0.957275 12.0087 0.957275 12.1287C0.957275 12.2487 0.980915 12.3676 1.02684 12.4785C1.07277 12.5893 1.14009 12.6901 1.22496 12.775C1.30983 12.8598 1.41058 12.9272 1.52146 12.9731C1.63235 13.019 1.75119 13.0426 1.87121 13.0426C1.99123 13.0426 2.11008 13.019 2.22096 12.9731C2.33184 12.9272 2.43259 12.8598 2.51746 12.775L6.99996 8.29246L11.4825 12.775C11.5673 12.8598 11.6681 12.9272 11.779 12.9731C11.8899 13.019 12.0087 13.0426 12.1287 13.0426C12.2487 13.0426 12.3676 13.019 12.4785 12.9731C12.5893 12.9272 12.6901 12.8598 12.775 12.775C12.8598 12.6901 12.9272 12.5893 12.9731 12.4785C13.019 12.3676 13.0426 12.2487 13.0426 12.1287C13.0426 12.0087 13.019 11.8899 12.9731 11.779C12.9272 11.6681 12.8598 11.5673 12.775 11.4825L8.29246 6.99996L12.775 2.51746C13.1233 2.16913 13.1233 1.58246 12.775 1.23413Z"
+                    fill="white" />
+            </svg>
+            <h2 class="prgrf_new_account">Добавление нового аккаунта</h2>
+        </div>
+        <div class="new_account_content">
+            <span class="text_new_account">Вставьте в данное поле ссылку на профиль в Steam, Steam ID или ссылку на Маркет.</span>
+            <input type="text" value="ttps://steamcommunity.com/profiles/76561198083135565/" class="input_promo_new_account">
+            <a href="#" id="logo" class="login_via_steam">ДОБАВИТЬ</a>
+        </div>
+    </div>
+
+
+    <!--Доп.компонент: фильтр-цена-->
+
+    <div class="filters">
+        <div class="sub_fiters">
+            <span class="frst_fiter_span_white">Цена</span><br>
+            <svg class="sub_fiters_svg_1" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 1H1M13 7H5M13 13H9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <svg class="sub_fiters_svg_2" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.41 0.589844L6 5.16984L10.59 0.589844L12 1.99984L6 7.99984L0 1.99984L1.41 0.589844Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="sub_fiters_2">
+            <div class="sub_filters_2_block">
+                <span class="frst_fiter_span_white">Цена</span><br>
+                <svg class="sub_fiters_svg_1" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 1H1M13 7H5M13 13H9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="sub_filters_2_block">
+                <span class="frst_fiter_span_white">Цена</span><br>
+                <svg class="sub_filter_2_svg" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 13H1M13 7H5M13 1H9" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
+                </svg>   
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Подтверждение удаления карты -->
+
+    <div class="accept_delete">
+        <div class="accept_delete_content">
+            <svg class="cross_3" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12.775 1.23413C12.6902 1.14915 12.5894 1.08173 12.4785 1.03573C12.3676 0.989731 12.2488 0.966054 12.1287 0.966054C12.0087 0.966054 11.8898 0.989731 11.7789 1.03573C11.668 1.08173 11.5673 1.14915 11.4825 1.23413L6.99996 5.70746L2.51746 1.22496C2.43259 1.14009 2.33184 1.07277 2.22096 1.02684C2.11008 0.980915 1.99123 0.957275 1.87121 0.957275C1.75119 0.957275 1.63235 0.980915 1.52146 1.02684C1.41058 1.07277 1.30983 1.14009 1.22496 1.22496C1.14009 1.30983 1.07277 1.41058 1.02684 1.52146C0.980915 1.63235 0.957275 1.75119 0.957275 1.87121C0.957275 1.99123 0.980915 2.11008 1.02684 2.22096C1.07277 2.33184 1.14009 2.43259 1.22496 2.51746L5.70746 6.99996L1.22496 11.4825C1.14009 11.5673 1.07277 11.6681 1.02684 11.779C0.980915 11.8899 0.957275 12.0087 0.957275 12.1287C0.957275 12.2487 0.980915 12.3676 1.02684 12.4785C1.07277 12.5893 1.14009 12.6901 1.22496 12.775C1.30983 12.8598 1.41058 12.9272 1.52146 12.9731C1.63235 13.019 1.75119 13.0426 1.87121 13.0426C1.99123 13.0426 2.11008 13.019 2.22096 12.9731C2.33184 12.9272 2.43259 12.8598 2.51746 12.775L6.99996 8.29246L11.4825 12.775C11.5673 12.8598 11.6681 12.9272 11.779 12.9731C11.8899 13.019 12.0087 13.0426 12.1287 13.0426C12.2487 13.0426 12.3676 13.019 12.4785 12.9731C12.5893 12.9272 12.6901 12.8598 12.775 12.775C12.8598 12.6901 12.9272 12.5893 12.9731 12.4785C13.019 12.3676 13.0426 12.2487 13.0426 12.1287C13.0426 12.0087 13.019 11.8899 12.9731 11.779C12.9272 11.6681 12.8598 11.5673 12.775 11.4825L8.29246 6.99996L12.775 2.51746C13.1233 2.16913 13.1233 1.58246 12.775 1.23413Z"
+                    fill="white" />
+            </svg>
+            <h2 class="accept_delete_prgrf">Вы действительно хотите
+                удалить банковскую карту?</h2>
+            <a href="#" id="logo" class="login_via_steam">Удалить</a>
+        </div>
+    </div>
+
+    <div class="accept_delete">
+        <div class="accept_delete_content">
+            <svg class="cross_3" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12.775 1.23413C12.6902 1.14915 12.5894 1.08173 12.4785 1.03573C12.3676 0.989731 12.2488 0.966054 12.1287 0.966054C12.0087 0.966054 11.8898 0.989731 11.7789 1.03573C11.668 1.08173 11.5673 1.14915 11.4825 1.23413L6.99996 5.70746L2.51746 1.22496C2.43259 1.14009 2.33184 1.07277 2.22096 1.02684C2.11008 0.980915 1.99123 0.957275 1.87121 0.957275C1.75119 0.957275 1.63235 0.980915 1.52146 1.02684C1.41058 1.07277 1.30983 1.14009 1.22496 1.22496C1.14009 1.30983 1.07277 1.41058 1.02684 1.52146C0.980915 1.63235 0.957275 1.75119 0.957275 1.87121C0.957275 1.99123 0.980915 2.11008 1.02684 2.22096C1.07277 2.33184 1.14009 2.43259 1.22496 2.51746L5.70746 6.99996L1.22496 11.4825C1.14009 11.5673 1.07277 11.6681 1.02684 11.779C0.980915 11.8899 0.957275 12.0087 0.957275 12.1287C0.957275 12.2487 0.980915 12.3676 1.02684 12.4785C1.07277 12.5893 1.14009 12.6901 1.22496 12.775C1.30983 12.8598 1.41058 12.9272 1.52146 12.9731C1.63235 13.019 1.75119 13.0426 1.87121 13.0426C1.99123 13.0426 2.11008 13.019 2.22096 12.9731C2.33184 12.9272 2.43259 12.8598 2.51746 12.775L6.99996 8.29246L11.4825 12.775C11.5673 12.8598 11.6681 12.9272 11.779 12.9731C11.8899 13.019 12.0087 13.0426 12.1287 13.0426C12.2487 13.0426 12.3676 13.019 12.4785 12.9731C12.5893 12.9272 12.6901 12.8598 12.775 12.775C12.8598 12.6901 12.9272 12.5893 12.9731 12.4785C13.019 12.3676 13.0426 12.2487 13.0426 12.1287C13.0426 12.0087 13.019 11.8899 12.9731 11.779C12.9272 11.6681 12.8598 11.5673 12.775 11.4825L8.29246 6.99996L12.775 2.51746C13.1233 2.16913 13.1233 1.58246 12.775 1.23413Z"
+                    fill="white" />
+            </svg>
+            <h2 class="accept_delete_prgrf">Вы действительно хотите
+                удалить банковскую карту?</h2>
+            <a href="#" id="logo" class="accept_delete_login_via_steam">Удалить</a>
+        </div>
+    </div>
+
+    <!-- Выбор и удаление карт -->
+
+    <div class="choice_card">
+        <div class="sub_choice_card_1">
+            <div class="sub_choice_card_1_block">
+                <input type="text" class="input_promo" value="**** **** **** **22" name="" id="logo">
+                <svg class="sub_choice_card_1_block_svg" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.59 7.41016L6 2.83016L1.41 7.41016L0 6.00016L6 0.000156403L12 6.00016L10.59 7.41016Z" fill="white"/>
+                </svg>
+            </div>
+        </div> 
+        <div class="sub_choice_card_2" id="logo">
+            <div class="sub_choice_card_2_block">
+                <span class="sub_choice_card_2_block_span_1">**** **** **** **22</span>
+                <a href="#" class="sub_choice_card_2_block_a_1">удалить</a>
+            </div>
+            <div class="sub_choice_card_2_block">
+                <span class="sub_choice_card_2_block_span_2">**** **** **** **22</span>
+                <a href="#" class="sub_choice_card_2_block_a_2">удалить</a>
+            </div>
+            <div class="sub_choice_card_2_block">
+                <span class="sub_choice_card_2_block_span_2">**** **** **** **22</span>
+                <a href="#" class="sub_choice_card_2_block_a_2">удалить</a>
+            </div>
+        </div> 
+
+    </div>
+
+
+    <!-- Микро меню -->
+
+    <div class="block_currency">
+        <div class="content_block_currency">
+            <span class="rub_currency">Калькулятор</span>
+            <span class="any_currency">Личный кабинет</span>
+            <span class="any_currency">Выйти</span>
+        </div>
+    </div>
+
+    </main>
+
+</body>
+
+</html>
